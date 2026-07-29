@@ -1,1 +1,215 @@
-#
+/* ==========================================================
+   VARIABLES.CSS
+   Portfolio Website
+   Design Tokens
+   ========================================================== */
+
+:root {
+
+    /* ======================================================
+       COLORS
+       ====================================================== */
+
+    /* Main dark blue
+       CMYK 90 / 65 / 45 / 35 */
+    --color-primary: #163547;
+
+    /* Green accent
+       CMYK 70 / 0 / 40 / 0 */
+    --color-accent-green: #4CBF84;
+
+    /* Grey accent
+       CMYK 50 / 0 / 0 / 50 */
+    --color-accent-grey: #808080;
+
+    /* Very light grey background
+       CMYK 4 / 0 / 0 / 10 */
+    --color-surface: #E6E6E6;
+
+    /* Light line
+       CMYK 20 / 0 / 0 / 30 */
+    --color-line-light: #B3B3B3;
+
+    /* Neutral line
+       CMYK 25 / 15 / 15 / 0 */
+    --color-line: #BFB1B1;
+
+    /* Dark grey
+       CMYK 0 / 0 / 0 / 75 */
+    --color-text-secondary: #404040;
+
+    /* Black */
+    --color-text: #000000;
+
+    /* White */
+    --color-white: #FFFFFF;
+
+    /* ======================================================
+       TYPOGRAPHY
+       ====================================================== */
+
+    --font-primary: "Roboto", sans-serif;
+    --font-condensed: "Roboto Condensed", sans-serif;
+
+    /* Hero */
+
+    --fs-display-name: 3.55rem;
+    --fs-display-subtitle: 2.05rem;
+
+    /* Sections */
+
+    --fs-section-title: 2.05rem;
+
+    /* Projects */
+
+    --fs-project-title: 2.05rem;
+
+    --fs-project-card-title: 1.38rem;
+
+    --fs-project-heading: 1.45rem;
+
+    /* Body */
+
+    --fs-body-large: 1.20rem;
+
+    --fs-body: 1rem;
+
+    --fs-small: .94rem;
+
+    --fs-label: .70rem;
+
+    /* Numbers inside hexagons */
+
+    --fs-number: 2.7rem;
+
+    /* Line-height */
+
+    --line-height: 1.2;
+
+    /* ======================================================
+       FONT WEIGHTS
+       ====================================================== */
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* ======================================================
+       CONTAINER
+       ====================================================== */
+
+    --container-width: 1440px;
+
+    --container-padding: 72px;
+
+    --section-padding-y: 72px;
+
+    --section-gap: 72px;
+
+    /* ======================================================
+       GRID
+       ====================================================== */
+
+    --grid-gap: 40px;
+
+    --column-gap: 40px;
+
+    /* ======================================================
+       PROJECT CARDS
+       ====================================================== */
+
+    --card-size: 250px;
+
+    --card-border-width: 3px;
+
+    /* ======================================================
+       PROJECT ARTEFACT
+       ====================================================== */
+
+    --artefact-width: 570px;
+
+    --artefact-height: 450px;
+
+    /* ======================================================
+       ICONS
+       ====================================================== */
+
+    --icon-small: 24px;
+
+    --icon-medium: 30px;
+
+    --icon-large: 40px;
+
+    --icon-xl: 50px;
+
+    /* ======================================================
+       HERO
+       ====================================================== */
+
+    --hero-line-width: 300px;
+
+    --hero-line-height: 5px;
+
+    /* ======================================================
+       PROJECTS
+       ====================================================== */
+
+    --project-line-width: 225px;
+
+    --project-line-height: 5px;
+
+    /* ======================================================
+       BORDER RADIUS
+       ====================================================== */
+
+    --radius-small: 4px;
+
+    --radius-medium: 8px;
+
+    /* ======================================================
+       TRANSITIONS
+       ====================================================== */
+
+    --transition-fast: .18s ease;
+
+    --transition-normal: .30s ease;
+
+    /* ======================================================
+       SHADOWS
+       ====================================================== */
+
+    --shadow-soft:
+        0 8px 24px rgba(0,0,0,.06);
+
+    --shadow-hover:
+        0 12px 32px rgba(0,0,0,.10);
+
+    /* ======================================================
+       Z-INDEX
+       ====================================================== */
+
+    --z-background: -1;
+
+    --z-default: 1;
+
+    --z-header: 100;
+
+    --z-overlay: 500;
+
+    --z-modal: 1000;
+
+}
+
+/* ==========================================================
+   BREAKPOINTS
+
+   Desktop First
+
+   1440
+   1280
+   1024
+   768
+   480
+
+   ========================================================== */
