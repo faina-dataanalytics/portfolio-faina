@@ -1,0 +1,156 @@
+/* ==========================================================
+   RESET.CSS
+   Portfolio Website
+   Author: Faina Kozyrieva
+   ========================================================== */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margins */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better text rendering */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Images */
+
+img,
+picture,
+svg,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+/* SVG */
+
+svg {
+    overflow: visible;
+}
+
+/* Forms */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Links */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Lists */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: inherit;
+    font-weight: inherit;
+}
+
+/* Paragraphs */
+
+p {
+    overflow-wrap: break-word;
+}
+
+/* Quotes */
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+}
+
+/* Horizontal rule */
+
+hr {
+    border: 0;
+}
+
+/* Text selection */
+
+::selection {
+    background: rgba(90, 180, 120, 0.25);
+}
+
+/* Focus */
+
+:focus-visible {
+    outline: 2px solid #4e9f68;
+    outline-offset: 3px;
+}
+
+/* Disabled */
+
+:disabled {
+    cursor: not-allowed;
+}
+
+/* Hidden */
+
+[hidden] {
+    display: none !important;
+}
