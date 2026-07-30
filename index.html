@@ -21,7 +21,7 @@
 
     <meta
         name="theme-color"
-        content="#163547">
+        content="#1D4456">
 
     <meta
         property="og:title"
@@ -41,182 +41,148 @@
 
     <link
         rel="icon"
+        type="image/png"
         href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
 
-    <link
-        rel="stylesheet"
-        href="css/reset.css">
-
-    <link
-        rel="stylesheet"
-        href="css/variables.css">
-
-    <link
-        rel="stylesheet"
-        href="css/base.css">
-
-    <link
-        rel="stylesheet"
-        href="css/layout.css">
-
-    <link
-        rel="stylesheet"
-        href="css/components.css">
-
-    <link
-        rel="stylesheet"
-        href="css/sections.css">
-
-    <link
-        rel="stylesheet"
-        href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
 
-<header class="site-header">
+<a
+    class="skip-link"
+    href="#main">
 
-    <nav class="navigation">
+    Zum Inhalt springen
 
-        <div class="container navigation__container">
+</a>
 
-            <a
-                href="#hero"
-                class="navigation__logo">
-
-                Portfolio
-
-            </a>
-
-            <ul class="navigation__list">
-
-                <li>
-                    <a href="#overview">
-                        Projekte
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about">
-                        Über mich
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-                        Kontakt
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </nav>
-
-</header>
-
-<main>
+<main
+    id="main">
 
 <!-- ===================================================== -->
-<!-- HERO -->
+<!-- HERO                                                  -->
 <!-- ===================================================== -->
 
 <section
     id="hero"
     class="hero">
 
-    <div class="container hero__layout">
+    <div class="container">
 
-        <!-- LEFT -->
+        <!-- TOP CONTACTS -->
+
+        <header class="hero__header">
+
+            <nav
+                class="hero__contacts"
+                aria-label="Social Media">
+
+                <a
+                    href="https://linkedin.com/in/fainakozyrieva"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn">
+
+                    <img
+                        src="assets/icons/linkedin.svg"
+                        alt="">
+
+                </a>
+
+                <a
+                    href="https://github.com/faina-dataanalytics"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub">
+
+                    <img
+                        src="assets/icons/github.svg"
+                        alt="">
+
+                </a>
+
+                <a
+                    href="mailto:info@fainakozyrieva.de"
+                    aria-label="E-Mail">
+
+                    <img
+                        src="assets/icons/mail.svg"
+                        alt="">
+
+                </a>
+
+            </nav>
+
+        </header>
+
+        <!-- HERO CONTENT -->
 
         <div class="hero__content">
 
-            <div class="divider divider--hero"></div>
+            <div class="hero__text">
 
-            <h1 class="display-name">
+                <div class="hero__line"></div>
 
-                FAINA KOZYRIEVA
+                <h1 class="hero__title">
 
-            </h1>
+                    FAINA<br>
+                    KOZYRIEVA
 
-            <p class="hero-subtitle">
+                </h1>
 
-                Business Analysis |
-                Data Analytics |
-                AI Solutions
+                <p class="hero__subtitle">
 
-            </p>
+                    Business Analysis |
+                    Data Analytics |
+                    AI Solutions
+
+                </p>
+
+            </div>
+
+            <figure class="hero__image">
+
+                <img
+                    src="assets/images/portrait.png"
+                    alt="Portrait von Faina Kozyrieva"
+                    loading="eager">
+
+            </figure>
 
         </div>
 
-        <!-- RIGHT -->
+        <!-- HERO PRINCIPLES -->
 
-        <div class="hero__portrait">
+        <div class="hero__principles">
 
-            <img
-                src="assets/images/portrait.png"
-                alt="Portrait von Faina Kozyrieva"
-                loading="eager">
+            <article class="principle">
 
-        </div>
-
-    </div>
-
-    <!-- CONTACTS -->
-
-    <div class="hero__contacts">
-
-        <a
-            href="https://linkedin.com/in/fainakozyrieva"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn">
-
-            <img
-                src="assets/icons/linkedin.svg"
-                alt="">
-
-        </a>
-
-        <a
-            href="https://github.com/faina-dataanalytics"
-            target="_blank"
-            rel="noopener"
-            aria-label="GitHub">
-
-            <img
-                src="assets/icons/github.svg"
-                alt="">
-
-        </a>
-
-        <a
-            href="mailto:YOURMAIL@EMAIL.COM"
-            aria-label="E-Mail">
-
-            <img
-                src="assets/icons/mail.svg"
-                alt="">
-
-        </a>
-
-    </div>
-
-    <!-- BOTTOM -->
-
-    <div class="container">
-
-        <div class="hero__pillars">
-
-            <!-- 01 -->
-
-            <article class="pillar">
-
-                <div class="pillar__number">
+                <div class="principle__hexagon">
 
                     <img
                         src="assets/icons/polyfigur.svg"
@@ -226,26 +192,24 @@
 
                 </div>
 
-                <div class="pillar__content">
+                <div class="principle__body">
 
-                    <div class="pillar__line"></div>
+                    <div class="principle__line"></div>
 
-                    <h3>
+                    <h2>
 
                         BUSINESS
                         VERSTEHEN
 
-                    </h3>
+                    </h2>
 
                 </div>
 
             </article>
 
-            <!-- 02 -->
+            <article class="principle">
 
-            <article class="pillar">
-
-                <div class="pillar__number">
+                <div class="principle__hexagon">
 
                     <img
                         src="assets/icons/polyfigur.svg"
@@ -255,26 +219,24 @@
 
                 </div>
 
-                <div class="pillar__content">
+                <div class="principle__body">
 
-                    <div class="pillar__line"></div>
+                    <div class="principle__line"></div>
 
-                    <h3>
+                    <h2>
 
                         DATEN
                         ANALYSIEREN
 
-                    </h3>
+                    </h2>
 
                 </div>
 
             </article>
 
-            <!-- 03 -->
+            <article class="principle">
 
-            <article class="pillar">
-
-                <div class="pillar__number">
+                <div class="principle__hexagon">
 
                     <img
                         src="assets/icons/polyfigur.svg"
@@ -284,16 +246,16 @@
 
                 </div>
 
-                <div class="pillar__content">
+                <div class="principle__body">
 
-                    <div class="pillar__line"></div>
+                    <div class="principle__line"></div>
 
-                    <h3>
+                    <h2>
 
                         LÖSUNGEN
                         GESTALTEN
 
-                    </h3>
+                    </h2>
 
                 </div>
 
@@ -306,437 +268,25 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- PROJECT OVERVIEW -->
+<!-- PROJECT OVERVIEW                                      -->
 <!-- ===================================================== -->
 
 <section
     id="overview"
-    class="section overview">
+    class="overview section">
 
     <div class="container">
 
-        <div class="projects-grid">
+        <header class="overview__intro">
 
-            <!-- ============================================= -->
-            <!-- LEFT COLUMN -->
-            <!-- ============================================= -->
+            <h2 class="visually-hidden">
 
-            <div>
+                Projektübersicht
 
-                <header class="overview__header">
+            </h2>
 
-                    <img
-                        src="assets/icons/business_transformation.svg"
-                        alt="">
+        </header>
 
-                    <h2 class="section-title text-green">
+        <div class="overview__grid">
 
-                        Business Transformation & AI
-
-                    </h2>
-
-                </header>
-
-                <div class="project-card-grid">
-
-                    <!-- CARD 01 -->
-
-                    <a
-                        href="#ai-grants"
-                        class="project-card">
-
-                        <div class="project-card__stack">
-
-                            Python · NLP · LLM
-
-                        </div>
-
-                        <h3 class="project-card__title">
-
-                            AI-gestützte
-                            Förderantragsprüfung
-
-                        </h3>
-
-                    </a>
-
-                    <!-- CARD 02 -->
-
-                    <a
-                        href="#knowledge-platform"
-                        class="project-card">
-
-                        <div class="project-card__stack">
-
-                            Business Analysis
-
-                        </div>
-
-                        <h3 class="project-card__title">
-
-                            Knowledge
-                            Platform
-
-                        </h3>
-
-                    </a>
-
-
-                                        <!-- CARD 03 -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="#market-analysis"
-                            class="project-card__link">
-
-                            <div class="project-card__header">
-
-                                <div class="project-card__line"></div>
-
-                                <p class="project-card__stack">
-
-                                    Business Intelligence
-
-                                </p>
-
-                            </div>
-
-                            <h3 class="project-card__title">
-
-                                Marktanalyse &
-                                Reporting
-
-                            </h3>
-
-                        </a>
-
-                    </article>
-
-                    <!-- CARD 04 -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="#reporting"
-                            class="project-card__link">
-
-                            <div class="project-card__header">
-
-                                <div class="project-card__line"></div>
-
-                                <p class="project-card__stack">
-
-                                    Power BI · KPI
-
-                                </p>
-
-                            </div>
-
-                            <h3 class="project-card__title">
-
-                                Reporting &
-                                Dashboard
-
-                            </h3>
-
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-            <!-- ============================================= -->
-            <!-- RIGHT COLUMN -->
-            <!-- ============================================= -->
-
-            <div>
-
-                <header class="overview__header">
-
-                    <img
-                        src="assets/icons/data_analytics.svg"
-                        alt="">
-
-                    <h2 class="section-title text-grey">
-
-                        Data Analytics & ML
-
-                    </h2>
-
-                </header>
-
-                <div class="project-card-grid">
-
-                    <!-- CARD 05 -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="#bad-buys"
-                            class="project-card__link">
-
-                            <div class="project-card__header">
-
-                                <div class="project-card__line"></div>
-
-                                <p class="project-card__stack">
-
-                                    Python · Machine Learning
-
-                                </p>
-
-                            </div>
-
-                            <h3 class="project-card__title">
-
-                                Bad Buys
-                                Prediction
-
-                            </h3>
-
-                        </a>
-
-                    </article>
-
-                    <!-- CARD 06 -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="#flight-delay"
-                            class="project-card__link">
-
-                            <div class="project-card__header">
-
-                                <div class="project-card__line"></div>
-
-                                <p class="project-card__stack">
-
-                                    Python · Classification
-
-                                </p>
-
-                            </div>
-
-                            <h3 class="project-card__title">
-
-                                Flight Delay
-                                Prediction
-
-                            </h3>
-
-                        </a>
-
-                    </article>
-
-                    <!-- CARD 07 -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="#flu-planning"
-                            class="project-card__link">
-
-                            <div class="project-card__header">
-
-                                <div class="project-card__line"></div>
-
-                                <p class="project-card__stack">
-
-                                    Python · Forecasting
-
-                                </p>
-
-                            </div>
-
-                            <h3 class="project-card__title">
-
-                                Influenza
-                                Planning
-
-                            </h3>
-
-                        </a>
-
-                    </article>
-
-                    <!-- CARD 08 -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="#risk-analysis"
-                            class="project-card__link">
-
-                            <div class="project-card__header">
-
-                                <div class="project-card__line"></div>
-
-                                <p class="project-card__stack">
-
-                                    SQL · Tableau
-
-                                </p>
-
-                            </div>
-
-                            <h3 class="project-card__title">
-
-                                Risk
-                                Analysis
-
-                            </h3>
-
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- PROJECT 01 -->
-<!-- ===================================================== -->
-
-<section
-    id="ai-grants"
-    class="section project project--left">
-
-    <div class="container">
-
-        <div class="project__layout">
-
-            <!-- ========================================= -->
-            <!-- LEFT -->
-            <!-- ========================================= -->
-
-            <div class="project__visual">
-
-                <div class="divider divider--project"></div>
-
-                <header class="project__header">
-
-                    <h2 class="project-title text-green">
-
-                        AI-gestützte
-                        Förderantragsprüfung
-
-                    </h2>
-
-                    <span class="project__badge">
-
-                        Lösungskonzept
-
-                    </span>
-
-                </header>
-
-                <figure class="project__artefact">
-
-                    <img
-                        src="assets/svg/artefakt-01.svg"
-                        alt="Systemdiagramm des Projekts AI-gestützte Förderantragsprüfung"
-                        loading="lazy">
-
-                </figure>
-
-                <nav
-                    class="project__links"
-                    aria-label="Projektlinks">
-
-                    <a
-                        href="https://github.com/faina-dataanalytics"
-                        target="_blank"
-                        rel="noopener">
-
-                        <img
-                            src="assets/icons/github.svg"
-                            alt="">
-
-                        <span>
-
-                            GitHub Repository
-
-                        </span>
-
-                    </a>
-
-                </nav>
-
-            </div>
-
-            <!-- ========================================= -->
-            <!-- RIGHT -->
-            <!-- ========================================= -->
-
-            <div class="project__content">
-
-                <article class="project-block">
-
-                    <header class="project-block__header">
-
-                        <img
-                            src="assets/icons/projektziel.svg"
-                            alt="">
-
-                        <h3 class="project-heading text-green">
-
-                            Projektziel
-
-                        </h3>
-
-                    </header>
-
-                    <p class="text-body">
-
-                        Entwicklung eines KI-gestützten
-                        Konzepts zur automatisierten
-                        Vorprüfung von Förderanträgen
-                        mit Fokus auf Effizienz,
-                        Transparenz und Nachvollziehbarkeit.
-
-                    </p>
-
-                </article>
-
-                <article class="project-block">
-
-                    <header class="project-block__header">
-
-                        <img
-                            src="assets/icons/fachlicher_fokus.svg"
-                            alt="">
-
-                        <h3 class="project-heading text-green">
-
-                            Fachlicher Fokus
-
-                        </h3>
-
-                    </header>
-
-                    <p class="text-body">
-
-                        Business Analyse,
-                        Prozessoptimierung,
-                        Public Sector,
-                        Generative AI,
-                        LLM-Unterstützung,
-                        Entscheidungsprozesse.
-
-                    </p>
-
-                </article>
-
-
-                  
+            <!-- LEFT COLUMN START -->
