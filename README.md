@@ -1,32 +1,98 @@
-# Faina Kozyrieva — Portfolio Website
+# Faina Kozyrieva — Business Analysis, Data Analytics & AI Solutions
 
-Ein persönliches Portfolio, entwickelt als statische Website mit **HTML5**, **CSS3** und **Vanilla JavaScript**.  
-Das Ziel des Projekts ist eine **pixelgenaue Übertragung** eines bestehenden Adobe‑InDesign‑Layouts in eine moderne Web‑Umgebung, optimiert für **GitHub Pages**.
+Willkommen in meinem Portfolio.  
+Ich bin Business Analystin und Data Analytics Specialist mit Schwerpunkt auf **strukturierter Informationsmodellierung**, **Prozessstandardisierung**, **datengetriebener Entscheidungsunterstützung** und **KI‑gestützten Lösungen**.
 
-Die Seite präsentiert meine Arbeitsschwerpunkte in **Business Analysis**, **Data Analytics** und **AI‑gestützten Lösungen** sowie acht ausgewählte Projekte aus beiden Bereichen.
-
----
-
-##  Ziele des Projekts
-
-- Pixel‑perfekte Umsetzung eines bestehenden PDF‑Layouts  
-- Klare, typografisch saubere Struktur  
-- Fokus auf Lesbarkeit, Professionalität und visuelle Konsistenz  
-- Keine Frameworks, keine Build‑Tools — reine statische Seite  
-- Voll kompatibel mit GitHub Pages
+Meine Arbeit verbindet fachliche Analyse, Datenkompetenz und moderne KI‑Methoden, um komplexe Anforderungen in **skalierbare, verständliche und wirkungsvolle Lösungen** zu übersetzen.
 
 ---
 
-##  Technologien
+## Profil
 
-- **HTML5**  
-- **CSS3** (Grid, Flexbox, Responsive Layout)  
-- **Vanilla JavaScript** (Navigation, Smooth Scroll)  
-- **SVG** für Icons und grafische Elemente  
-- **WebP/PNG** für Bilder  
-- **Keine** externen Frameworks (React, Bootstrap, Tailwind, jQuery etc.)
+Ich entwickle strukturierte, skalierbare und KI‑gestützte Lösungen, die komplexe fachliche Anforderungen in praktische Entscheidungssysteme überführen.
+
+Ich wende Data Analytics und Machine Learning an, um Erkenntnisse zu gewinnen, Muster zu erklären und evidenzbasierte Entscheidungsfindung zu unterstützen.
 
 ---
 
-##  Projektstruktur
+## Kompetenzschwerpunkte
 
+### Business & AI Solutions
+- Business Analysis  
+- Requirements Engineering  
+- Prozessanalyse  
+- Informationsarchitektur  
+- Decision Support  
+- Document Intelligence  
+- KI‑Solution Design  
+- Change Management  
+
+### Data Science & Analytics
+- Explorative Datenanalyse  
+- SQL Analytics  
+- Statistik  
+- Machine Learning  
+- Predictive Analytics  
+- Explainable AI  
+- Dashboard‑Design (Tableau, Power BI)  
+- Product Analytics  
+
+---
+
+## Projektportfolio
+
+### **Business Transformation & AI**
+Ausgewählte Projekte aus Business Analysis, Prozessoptimierung und KI‑gestützter Lösungsentwicklung:
+
+- KI‑gestützte Bewertung von Förderanträgen  
+- AI Knowledge Platform (RAG‑basiert)  
+- Unterstützung im öffentlichen Beschaffungswesen (Predictive Analytics)  
+- Standardisierung der Unternehmensberichterstattung  
+- Digitales Medienreporting  
+- Workflow‑Automatisierung für Printproduktion  
+
+➡ Vollständiges Portfolio: *Portfolio‑Website*
+
+---
+
+### **Data Science & Analytics**
+Analytische Projekte aus SQL, Python, Statistik, Machine Learning, Tableau, Power BI und Product Analytics:
+
+- Internationale Markt- & Kundenanalyse (Tableau)  
+- Kundensegmentierung & Verhaltensanalyse (ML, Python)  
+- Personalplanung für die Grippesaison (Statistik)  
+- Analyse der Flugperformance (Power BI)  
+- Mobile Onboarding & User Retention Analyse (Product Analytics)  
+- Prognose risikoreicher Fahrzeugkäufe (ML, Explainable AI)  
+
+➡ Weitere Projekte: *Portfolio‑Website*
+
+---
+
+## Arbeitsweise
+
+Meine Projekte folgen einem konsistenten methodischen Ansatz:
+
+- Strukturierung komplexer Informationen  
+- Definition klarer Indikatoren und Datenmodelle  
+- Prozessstandardisierung  
+- Automatisierung repetitiver Tätigkeiten  
+- Entwicklung skalierbarer Lösungsarchitekturen  
+- enge Abstimmung mit Stakeholdern  
+- verständliche Dokumentation und Wissenstransfer  
+
+---
+
+## Kontakt
+
+**Faina Kozyrieva**  
+Business Analysis · Data Analytics · AI Solutions  
+
+LinkedIn • GitHub • E‑Mail
+
+---
+
+## Hinweis
+
+Dieses Portfolio dient der Präsentation meiner beruflichen Projekte und Kompetenzen.  
+Die Inhalte
