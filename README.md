@@ -51,7 +51,7 @@ Ausgewählte Projekte aus Business Analysis, Prozessoptimierung und KI‑gestüt
 - Digitales Medienreporting  
 - Workflow‑Automatisierung für Printproduktion  
 
-➡ Vollständiges Portfolio: *Portfolio‑Website*
+➡ [Details ansehen](https://github.com/faina-dataanalytics/business-AI-solutions-portfolio)
 
 ---
 
@@ -65,7 +65,7 @@ Analytische Projekte aus SQL, Python, Statistik, Machine Learning, Tableau, Powe
 - Mobile Onboarding & User Retention Analyse (Product Analytics)  
 - Prognose risikoreicher Fahrzeugkäufe (ML, Explainable AI)  
 
-➡ Weitere Projekte: *Portfolio‑Website*
+➡ [Details ansehen](https://github.com/faina-dataanalytics/data-science-analytics-portfolio)
 
 ---
 
@@ -88,7 +88,7 @@ Meine Projekte folgen einem konsistenten methodischen Ansatz:
 **Faina Kozyrieva**  
 Business Analysis · Data Analytics · AI Solutions  
 
-LinkedIn • GitHub • E‑Mail
+LinkedIn(https://www.linkedin.com/in/fainakozyrieva/) • E‑Mail(faina.kozyrieva@gmail.com)
 
 ---
 
