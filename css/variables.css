@@ -99,7 +99,7 @@
        CONTAINER
        ====================================================== */
 
-    --container-width: 1440px;
+    --container-max-width: 1440px;
 
     --container-padding: 72px;
 
