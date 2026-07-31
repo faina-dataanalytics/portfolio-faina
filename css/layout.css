@@ -1,462 +1,280 @@
 /* ==========================================================
    LAYOUT.CSS
    Portfolio Website
-   Global layout, grid and containers
+   Global layout, containers, sections and module layouts
    ========================================================== */
 
-
 /* ==========================================================
-   CONTAINER
+   CONTAINER & MAIN
    ========================================================== */
 
 .container {
-
     width: min(
-        calc(100% - (2 * var(--container-padding))),
-        var(--container-max-width)
+        calc(100% - (2 * var(--container-padding, 2rem))),
+        var(--container-max-width, 1200px)
     );
-
     margin-inline: auto;
 }
-
-
-/* ==========================================================
-   MAIN
-   ========================================================== */
 
 main {
     width: 100%;
 }
 
-
 /* ==========================================================
-   SECTIONS
+   SECTIONS & ANCHOR OFFSET
    ========================================================== */
 
 .section {
-
     position: relative;
-
     width: 100%;
-
-    padding-block: var(--section-padding-y);
-
+    padding-block: var(--section-padding-y, 5rem);
 }
 
-
-.section:first-child {
-    padding-top: 0;
+section[id] {
+    scroll-margin-top: 80px;
 }
-
 
 /* ==========================================================
-   SECTION HEADER
-   ========================================================== */
-
-.section-header {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 1rem;
-
-    margin-bottom: 4rem;
-
-}
-
-
-/* ==========================================================
-   GRID
-   ========================================================== */
-
-.grid {
-
-    display: grid;
-
-}
-
-
-.grid-2 {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: var(--grid-gap);
-
-}
-
-
-.grid-3 {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-
-    gap: var(--grid-gap);
-
-}
-
-
-.grid-4 {
-
-    display: grid;
-
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-
-    gap: var(--grid-gap);
-
-}
-
-
-/* ==========================================================
-   FLEX
-   ========================================================== */
-
-.flex {
-
-    display: flex;
-
-}
-
-
-.flex-column {
-
-    display: flex;
-
-    flex-direction: column;
-
-}
-
-
-.flex-center {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-}
-
-
-.flex-between {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-}
-
-
-.flex-start {
-
-    display: flex;
-
-    align-items: flex-start;
-
-}
-
-
-.flex-end {
-
-    display: flex;
-
-    align-items: flex-end;
-
-}
-
-
-.flex-wrap {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-}
-
-
-/* ==========================================================
-   GAPS
-   ========================================================== */
-
-.gap-xs {
-    gap: .5rem;
-}
-
-.gap-sm {
-    gap: 1rem;
-}
-
-.gap-md {
-    gap: 2rem;
-}
-
-.gap-lg {
-    gap: 3rem;
-}
-
-.gap-xl {
-    gap: 4rem;
-}
-
-
-/* ==========================================================
-   PROJECT LAYOUT
-   ========================================================== */
-
-.project {
-
-    display: grid;
-
-    grid-template-columns: 46% 54%;
-
-    align-items: start;
-
-    column-gap: 5rem;
-
-}
-
-
-.project--reverse {
-
-    grid-template-columns: 54% 46%;
-
-}
-
-
-.project--reverse .project__visual {
-
-    order: 2;
-
-}
-
-
-.project--reverse .project__content {
-
-    order: 1;
-
-}
-
-
-/* ==========================================================
-   PROJECT COLUMNS
-   ========================================================== */
-
-.project__visual {
-
-    display: flex;
-
-    flex-direction: column;
-
-}
-
-
-.project__content {
-
-    display: flex;
-
-    flex-direction: column;
-
-}
-
-
-/* ==========================================================
-   PROJECT CONTENT SPACING
-   ========================================================== */
-
-.project__content>*+* {
-
-    margin-top: 2rem;
-
-}
-
-
-/* ==========================================================
-   OVERVIEW GRID
-   ========================================================== */
-
-.projects-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    column-gap: 7rem;
-
-    align-items: start;
-
-}
-
-
-/* ==========================================================
-   PROJECT CARD GRID
-   ========================================================== */
-
-.project-card-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, var(--card-size));
-
-    justify-content: space-between;
-
-    gap: 2rem;
-
-}
-
-
-/* ==========================================================
-   HERO
+   HERO SECTION LAYOUT
    ========================================================== */
 
 .hero {
-
     min-height: 100vh;
-
     display: flex;
-
     align-items: center;
-
 }
 
+.hero__header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
 
-.hero__layout {
+.hero__contacts {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
 
+.hero__content {
     display: grid;
-
     grid-template-columns: 58% 42%;
-
     align-items: center;
-
+    gap: 2rem;
 }
 
+.hero__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.principle {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.principle__hexagon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principle__body {
+    display: flex;
+    flex-direction: column;
+}
 
 /* ==========================================================
-   ABOUT
+   OVERVIEW SECTION LAYOUT
+   ========================================================== */
+
+.overview__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7rem;
+    align-items: start;
+}
+
+.overview__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.overview__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.overview__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ==========================================================
+   PROJECTS SECTION & SINGLE PROJECT LAYOUT
+   ========================================================== */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project__layout {
+    display: grid;
+    grid-template-columns: 46% 54%;
+    align-items: start;
+    column-gap: 5rem;
+}
+
+/* Reverse grid layout for even project blocks */
+.project--reverse .project__layout {
+    grid-template-columns: 54% 46%;
+}
+
+.project--reverse .project__media {
+    order: 2;
+}
+
+.project--reverse .project__content {
+    order: 1;
+}
+
+.project__media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project__resources {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-line, #e0e0e0);
+}
+
+.project__pager {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ==========================================================
+   ABOUT SECTION LAYOUT
    ========================================================== */
 
 .about {
+    padding-block: var(--section-padding-y, 5rem);
+}
 
+.about__layout {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
+    gap: 5rem;
+    align-items: start;
 }
 
-
-.about__left {
-
-    padding: 5rem;
-
+.about__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
-
-.about__right {
-
-    padding: 5rem;
-
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
+.about-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 /* ==========================================================
-   CONTACT
+   CONTACT SECTION LAYOUT
    ========================================================== */
 
 .contact {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
     min-height: 100vh;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contact__social {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    max-width: 600px;
+}
 
 /* ==========================================================
-   WIDTH HELPERS
+   FOOTER LAYOUT
    ========================================================== */
 
-.w-100 {
-
-    width: 100%;
-
+.footer {
+    padding-block: 2rem;
 }
 
-
-.h-100 {
-
-    height: 100%;
-
-}
-
-
-/* ==========================================================
-   SPACING HELPERS
-   ========================================================== */
-
-.mt-auto {
-    margin-top: auto;
-}
-
-.mb-0 {
-    margin-bottom: 0;
-}
-
-.mx-auto {
-    margin-inline: auto;
-}
-
-
-/* ==========================================================
-   DIVIDERS
-   ========================================================== */
-
-.divider {
-
-    width: 100%;
-
-    height: 1px;
-
-    background: var(--color-line);
-
-}
-
-
-.divider--hero {
-
-    width: var(--hero-line-width);
-
-    height: var(--hero-line-height);
-
-    background: var(--color-line-light);
-
-}
-
-
-.divider--project {
-
-    width: var(--project-line-width);
-
-    height: var(--project-line-height);
-
-    background: var(--color-line-light);
-
-}
-
-
-/* ==========================================================
-   ANCHOR OFFSET
-   ========================================================== */
-
-section[id] {
-
-    scroll-margin-top: 80px;
-
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
