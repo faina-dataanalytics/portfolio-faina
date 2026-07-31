@@ -1,1 +1,1216 @@
-#
+/* =========================================================
+   RESPONSIVE.CSS
+   Portfolio — responsive adaptations
+========================================================= */
+
+
+/* =========================================================
+   01. LARGE DESKTOP
+   1200px – 1440px+
+========================================================= */
+
+@media (max-width: 1440px) {
+
+    /* -----------------------------------------------------
+       GLOBAL CONTAINER
+    ----------------------------------------------------- */
+
+    .container {
+
+        width: min(
+            calc(100% - 6rem),
+            1290px
+        );
+
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .hero__layout {
+
+        gap: 3rem;
+
+    }
+
+    .hero__image img {
+
+        max-width: 500px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       OVERVIEW
+    ----------------------------------------------------- */
+
+    .overview__layout {
+
+        gap: 4rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT
+    ----------------------------------------------------- */
+
+    .project__layout {
+
+        grid-template-columns:
+            minmax(430px, 1fr)
+            minmax(430px, 1fr);
+
+        gap: 4rem;
+
+    }
+
+    .project--reverse .project__layout {
+
+        grid-template-columns:
+            minmax(430px, 1fr)
+            minmax(430px, 1fr);
+
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT
+    ----------------------------------------------------- */
+
+    .about__layout {
+
+        grid-template-columns: 380px 1fr;
+
+        gap: 4rem;
+
+    }
+
+}
+
+
+/* =========================================================
+   02. TABLET / SMALL DESKTOP
+   1024px – 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    /* -----------------------------------------------------
+       GLOBAL
+    ----------------------------------------------------- */
+
+    .container {
+
+        width: min(
+            calc(100% - 4rem),
+            1000px
+        );
+
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .hero__layout {
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(300px, 420px);
+
+        gap: 2rem;
+
+    }
+
+    .hero__title {
+
+        font-size: clamp(
+            3rem,
+            5vw,
+            4rem
+        );
+
+    }
+
+    .hero__subtitle {
+
+        font-size: 1.65rem;
+
+        margin-bottom: 3.5rem;
+
+    }
+
+    .hero__image img {
+
+        max-width: 420px;
+
+    }
+
+    .hero__bottom {
+
+        gap: 1rem;
+
+    }
+
+    .hero-feature {
+
+        gap: .7rem;
+
+    }
+
+    .hero-feature__number {
+
+        width: 70px;
+
+        height: 61px;
+
+    }
+
+    .hero-feature__number span {
+
+        font-size: 1.6rem;
+
+    }
+
+    .hero-feature__title {
+
+        font-size: 1.25rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       OVERVIEW
+    ----------------------------------------------------- */
+
+    .overview__layout {
+
+        gap: 3rem;
+
+    }
+
+    .project-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 1rem;
+
+    }
+
+    .project-card {
+
+        width: 100%;
+
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT
+    ----------------------------------------------------- */
+
+    .project__layout,
+    .project--reverse .project__layout {
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 3rem;
+
+    }
+
+    .project__figure img {
+
+        max-width: 100%;
+
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT
+    ----------------------------------------------------- */
+
+    .about__layout {
+
+        grid-template-columns:
+            320px
+            minmax(0, 1fr);
+
+        gap: 3rem;
+
+    }
+
+    .about__sidebar {
+
+        padding: 2rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACT
+    ----------------------------------------------------- */
+
+    .contact__symbol {
+
+        width: min(280px, 35vw);
+
+    }
+
+}
+
+
+/* =========================================================
+   03. MOBILE LANDSCAPE / SMALL TABLET
+   768px – 1023px
+========================================================= */
+
+@media (max-width: 1023px) {
+
+    /* -----------------------------------------------------
+       GLOBAL
+    ----------------------------------------------------- */
+
+    .container {
+
+        width: calc(100% - 3rem);
+
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .site-header {
+
+        min-height: auto;
+
+    }
+
+    .hero {
+
+        min-height: auto;
+
+    }
+
+    .hero__layout {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        padding-top: 7rem;
+
+        padding-bottom: 4rem;
+
+    }
+
+    .hero__content {
+
+        align-items: flex-start;
+
+    }
+
+    .hero__image {
+
+        order: -1;
+
+        justify-content: center;
+
+    }
+
+    .hero__image img {
+
+        width: min(
+            65vw,
+            430px
+        );
+
+    }
+
+    .hero__social {
+
+        top: 1.75rem;
+
+        right: 0;
+
+    }
+
+    .hero__bottom {
+
+        width: 100%;
+
+        margin-top: 2rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       OVERVIEW
+    ----------------------------------------------------- */
+
+    .overview__layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 5rem;
+
+    }
+
+    .project-grid {
+
+        max-width: 540px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT
+    ----------------------------------------------------- */
+
+    .project__layout,
+    .project--reverse .project__layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 3.5rem;
+
+    }
+
+    .project--reverse .project__content {
+
+        order: 1;
+
+    }
+
+    .project--reverse .project__media {
+
+        order: 2;
+
+    }
+
+    .project__media {
+
+        max-width: 700px;
+
+    }
+
+    .project__content {
+
+        max-width: 700px;
+
+    }
+
+    .project__footer {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT
+    ----------------------------------------------------- */
+
+    .about__layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .about__sidebar {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 2rem;
+
+    }
+
+    .about-card:not(:last-child) {
+
+        margin-bottom: 0;
+
+    }
+
+    .about__cv {
+
+        grid-column: 1 / -1;
+
+        margin-top: 1rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACT
+    ----------------------------------------------------- */
+
+    .contact {
+
+        min-height: 80svh;
+
+    }
+
+    .contact__social {
+
+        top: 1.5rem;
+
+    }
+
+}
+
+
+/* =========================================================
+   04. MOBILE
+   480px – 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* -----------------------------------------------------
+       GLOBAL
+    ----------------------------------------------------- */
+
+    html {
+
+        scroll-padding-top: 1rem;
+
+    }
+
+    .container {
+
+        width: calc(100% - 2rem);
+
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .hero__layout {
+
+        padding-top: 6rem;
+
+        padding-bottom: 3rem;
+
+    }
+
+    .hero__social {
+
+        top: 1rem;
+
+        gap: .6rem;
+
+    }
+
+    .hero__social a {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+    .hero__social img {
+
+        width: 30px;
+
+        height: 30px;
+
+    }
+
+    .hero__image img {
+
+        width: min(
+            75vw,
+            360px
+        );
+
+    }
+
+    .hero__line {
+
+        width: min(
+            220px,
+            60vw
+        );
+
+        height: 4px;
+
+        margin-bottom: 2rem;
+
+    }
+
+    .hero__title {
+
+        font-size: clamp(
+            2.5rem,
+            10vw,
+            3.5rem
+        );
+
+    }
+
+    .hero__subtitle {
+
+        font-size: clamp(
+            1.25rem,
+            5vw,
+            1.65rem
+        );
+
+        margin-bottom: 3rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       HERO FEATURES
+    ----------------------------------------------------- */
+
+    .hero__bottom {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.5rem;
+
+    }
+
+    .hero-feature {
+
+        max-width: 400px;
+
+    }
+
+    .hero-feature__number {
+
+        width: 76px;
+
+        height: 66px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       OVERVIEW
+    ----------------------------------------------------- */
+
+    .overview__layout {
+
+        gap: 4rem;
+
+    }
+
+    .overview-category__header {
+
+        margin-bottom: 2rem;
+
+    }
+
+    .overview-category__header h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .overview-category__header img {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+    .project-grid {
+
+        width: 100%;
+
+        max-width: none;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: .75rem;
+
+    }
+
+    .project-card {
+
+        padding: 1rem;
+
+        border-width: 2px;
+
+    }
+
+    .project-card__technology {
+
+        font-size: .75rem;
+
+        gap: .5rem;
+
+    }
+
+    .project-card__technology::before {
+
+        width: 35px;
+
+    }
+
+    .project-card__title {
+
+        font-size: 1.05rem;
+
+    }
+
+    .project-card::after {
+
+        right: .8rem;
+
+        bottom: .7rem;
+
+        font-size: 1.25rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT
+    ----------------------------------------------------- */
+
+    .project {
+
+        scroll-margin-top: 1rem;
+
+    }
+
+    .project__layout,
+    .project--reverse .project__layout {
+
+        gap: 2.5rem;
+
+    }
+
+    .project__divider {
+
+        width: 170px;
+
+        height: 4px;
+
+        margin-bottom: 1.75rem;
+
+    }
+
+    .project__title {
+
+        font-size: 2rem;
+
+    }
+
+    .project__figure {
+
+        width: 100%;
+
+    }
+
+    .project__resources {
+
+        gap: 1rem;
+
+        margin-top: 1.5rem;
+
+    }
+
+    .project__resources a {
+
+        gap: .5rem;
+
+    }
+
+    .project__resources img {
+
+        width: 25px;
+
+        height: 25px;
+
+    }
+
+    .project__resources span {
+
+        font-size: .85rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       INFO BLOCKS
+    ----------------------------------------------------- */
+
+    .project__content {
+
+        gap: 2rem;
+
+    }
+
+    .info-block {
+
+        gap: .65rem;
+
+    }
+
+    .info-block__header {
+
+        gap: .75rem;
+
+    }
+
+    .info-block__header img {
+
+        width: 28px;
+
+        height: 28px;
+
+    }
+
+    .info-block__header h3 {
+
+        font-size: 1.3rem;
+
+    }
+
+    .info-block p {
+
+        padding-left: 0;
+
+        font-size: 1rem;
+
+        line-height: 1.65;
+
+    }
+
+    .project__content > .info-block:not(:last-child) {
+
+        padding-bottom: 0;
+
+        border-bottom: 0;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT NAVIGATION
+    ----------------------------------------------------- */
+
+    .project__footer {
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        margin-top: 3rem;
+
+    }
+
+    .project__overview {
+
+        width: 100%;
+
+    }
+
+    .project__pager {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 1rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT
+    ----------------------------------------------------- */
+
+    .about__layout {
+
+        gap: 3rem;
+
+    }
+
+    .about__sidebar {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 1.75rem;
+
+    }
+
+    .about-card:not(:last-child) {
+
+        margin-bottom: 2rem;
+
+    }
+
+    .about-card__header {
+
+        gap: .75rem;
+
+    }
+
+    .about-card__header img {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+    .about-card__header h2 {
+
+        font-size: 1.25rem;
+
+    }
+
+    .about-card p {
+
+        padding-left: 0;
+
+        font-size: .95rem;
+
+        line-height: 1.7;
+
+    }
+
+    .about__content {
+
+        justify-content: flex-start;
+
+    }
+
+    .about__intro {
+
+        font-size: 1.25rem;
+
+    }
+
+    .about__content p {
+
+        font-size: 1rem;
+
+        line-height: 1.75;
+
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACT
+    ----------------------------------------------------- */
+
+    .contact {
+
+        min-height: 100svh;
+
+    }
+
+    .contact__social {
+
+        position: absolute;
+
+        top: 1rem;
+
+        right: 0;
+
+        gap: .6rem;
+
+    }
+
+    .contact__social a {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+    .contact__social img {
+
+        width: 30px;
+
+        height: 30px;
+
+    }
+
+    .contact__content {
+
+        max-width: 100%;
+
+    }
+
+    .contact__symbol {
+
+        width: min(
+            250px,
+            65vw
+        );
+
+        margin-bottom: 2rem;
+
+    }
+
+    .contact__content h2 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .contact__content p {
+
+        font-size: 1rem;
+
+        line-height: 1.7;
+
+        margin-bottom: 2.5rem;
+
+    }
+
+    .button--light {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+    ----------------------------------------------------- */
+
+    .footer .container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: .75rem;
+
+    }
+
+    .footer p:last-child {
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* =========================================================
+   05. VERY SMALL MOBILE
+   <= 479px
+========================================================= */
+
+@media (max-width: 479px) {
+
+    /* -----------------------------------------------------
+       GLOBAL
+    ----------------------------------------------------- */
+
+    .container {
+
+        width: calc(100% - 1.5rem);
+
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .hero__social {
+
+        gap: .35rem;
+
+    }
+
+    .hero__social a {
+
+        width: 32px;
+
+        height: 32px;
+
+    }
+
+    .hero__social img {
+
+        width: 27px;
+
+        height: 27px;
+
+    }
+
+    .hero__layout {
+
+        padding-top: 5rem;
+
+    }
+
+    .hero__image img {
+
+        width: min(
+            82vw,
+            320px
+        );
+
+    }
+
+    .hero__title {
+
+        font-size: 2.35rem;
+
+    }
+
+    .hero__subtitle {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT GRID
+    ----------------------------------------------------- */
+
+    .project-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+    }
+
+    .project-card {
+
+        width: 100%;
+
+        max-width: 300px;
+
+        margin-inline: auto;
+
+        aspect-ratio: 1 / 1;
+
+    }
+
+
+    /* -----------------------------------------------------
+       PROJECT
+    ----------------------------------------------------- */
+
+    .project__title {
+
+        font-size: 1.75rem;
+
+    }
+
+    .project__divider {
+
+        width: 140px;
+
+    }
+
+    .project__resources {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .project__pager {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .project__previous,
+    .project__next {
+
+        justify-content: center;
+
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT
+    ----------------------------------------------------- */
+
+    .about__sidebar {
+
+        padding: 1.5rem;
+
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACT
+    ----------------------------------------------------- */
+
+    .contact__content h2 {
+
+        font-size: 1.9rem;
+
+    }
+
+    .contact__symbol {
+
+        width: 58vw;
+
+    }
+
+}
+
+
+/* =========================================================
+   06. REDUCED MOTION
+   Accessibility
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        scroll-behavior: auto !important;
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+
+    }
+
+}
