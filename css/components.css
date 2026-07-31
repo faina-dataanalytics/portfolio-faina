@@ -888,3 +888,388 @@
     visibility: hidden;
 
 }
+
+
+
+
+/* =========================================================
+   COMPONENT 03B
+   PROJECT INFO BLOCKS
+========================================================= */
+
+.info-block {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .85rem;
+
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.info-block__header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.info-block__header img {
+
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
+    object-fit: contain;
+
+}
+
+.info-block__header h3 {
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(1.35rem, 1.8vw, 1.55rem);
+
+    font-weight: 900;
+
+    line-height: 1.15;
+
+}
+
+/* =========================================================
+   ACCENT COLOURS
+========================================================= */
+
+/* зелені проєкти */
+
+.project__title--green ~ .project__content .info-block__header h3,
+.project--green .info-block__header h3 {
+
+    color: var(--color-green);
+
+}
+
+/* сірі проєкти */
+
+.project__title--gray ~ .project__content .info-block__header h3,
+.project--gray .info-block__header h3 {
+
+    color: var(--color-text-light);
+
+}
+
+/* Якщо не задано модифікатор —
+   використовуємо зелений як базовий */
+
+.info-block__header h3 {
+
+    color: var(--color-green);
+
+}
+
+/* =========================================================
+   BODY TEXT
+========================================================= */
+
+.info-block p {
+
+    margin: 0;
+
+    padding-left: 2.9rem;
+
+    font-size: 1.12rem;
+
+    line-height: 1.72;
+
+    color: var(--color-dark);
+
+    text-wrap: pretty;
+
+}
+
+/* =========================================================
+   SPACING
+========================================================= */
+
+.project__content > .info-block:not(:last-child) {
+
+    padding-bottom: .5rem;
+
+    border-bottom: 1px solid rgba(0,0,0,.05);
+
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.info-block {
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+
+}
+
+.info-block:hover {
+
+    transform: translateX(3px);
+
+}
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+.info-block__header img {
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+
+}
+
+.info-block:hover .info-block__header img {
+
+    transform: rotate(-6deg);
+
+    opacity: .95;
+
+}
+
+/* =========================================================
+   READABILITY
+========================================================= */
+
+.info-block p strong {
+
+    font-weight: 700;
+
+}
+
+.info-block p em {
+
+    font-style: italic;
+
+}
+
+
+
+
+
+/* =========================================================
+   COMPONENT 03C
+   PROJECT FOOTER NAVIGATION
+========================================================= */
+
+.project__footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    margin-top: 4.5rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid rgba(0, 0, 0, .08);
+
+}
+
+/* =========================================================
+   ÜBERSICHT BUTTON
+========================================================= */
+
+.project__overview {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 170px;
+
+    height: 48px;
+
+    padding-inline: 1.8rem;
+
+    border: 2px solid var(--color-green);
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: var(--color-green);
+
+    font-family: var(--font-primary);
+
+    font-size: .95rem;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        transform .25s ease,
+        border-color .25s ease;
+
+}
+
+.project__overview:hover {
+
+    background: var(--color-green);
+
+    color: var(--color-white);
+
+    transform: translateY(-2px);
+
+}
+
+.project__overview:focus-visible {
+
+    outline: 3px solid var(--color-green);
+
+    outline-offset: 4px;
+
+}
+
+/* =========================================================
+   PROJECT PAGER
+========================================================= */
+
+.project__pager {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+
+}
+
+.project__pager a,
+.project__pager span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .35rem;
+
+    font-size: .96rem;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    color: var(--color-dark);
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+/* =========================================================
+   PREVIOUS
+========================================================= */
+
+.project__previous:hover {
+
+    color: var(--color-green);
+
+    transform: translateX(-4px);
+
+}
+
+/* =========================================================
+   NEXT
+========================================================= */
+
+.project__next:hover {
+
+    color: var(--color-green);
+
+    transform: translateX(4px);
+
+}
+
+/* =========================================================
+   DISABLED
+========================================================= */
+
+.project__next--disabled {
+
+    opacity: .45;
+
+    cursor: default;
+
+    user-select: none;
+
+}
+
+/* =========================================================
+   SHARED FOCUS
+========================================================= */
+
+.project__pager a:focus-visible {
+
+    outline: 3px solid var(--color-green);
+
+    outline-offset: 4px;
+
+    border-radius: 6px;
+
+}
+
+/* =========================================================
+   SMALL ANIMATION
+========================================================= */
+
+.project__previous::before {
+
+    transition: transform .25s ease;
+
+}
+
+.project__next::after {
+
+    transition: transform .25s ease;
+
+}
+
+.project__previous:hover::before {
+
+    transform: translateX(-2px);
+
+}
+
+.project__next:hover::after {
+
+    transform: translateX(2px);
+
+}
