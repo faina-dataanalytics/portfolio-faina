@@ -1,8 +1,21 @@
 /* ==========================================================================
-   COMPONENTS
+   COMPONENTS (З налаштуваннями під макет)
    ========================================================================== */
 
-/* --- 1. Кнопки (Buttons) --- */
+:root {
+  /* Замініть ці значення на точні кольори та шрифти з вашого PDF */
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --bg-card: #ffffff;
+  --border-color: #e2e8f0;
+  --radius-btn: 8px;
+  --radius-card: 12px;
+  --container-width: 1200px;
+}
+
+/* --- Кнопки --- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -10,48 +23,38 @@
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.5;
-  border-radius: 8px;
+  border-radius: var(--radius-btn);
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: all 0.25s ease;
   text-decoration: none;
 }
 
 .btn-primary {
-  background-color: #2563eb;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
-}
-
-.btn-secondary {
-  background-color: #e2e8f0;
-  color: #1e293b;
-}
-
-.btn-secondary:hover {
-  background-color: #cbd5e1;
+  background-color: var(--primary-hover);
 }
 
 .btn-outline {
   background-color: transparent;
-  border-color: #2563eb;
-  color: #2563eb;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn-outline:hover {
-  background-color: #2563eb;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
-/* --- 2. Картки (Cards) --- */
+/* --- Картки --- */
 .card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-color);
   padding: 1.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -67,24 +70,18 @@
 .card-title {
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--text-main);
   margin-bottom: 0.75rem;
-  color: #0f172a;
 }
 
 .card-body {
-  color: #475569;
+  color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
   flex-grow: 1;
 }
 
-.card-footer {
-  margin-top: 1.25rem;
-  padding-top: 1rem;
-  border-top: 1px solid #f1f5f9;
-}
-
-/* --- 3. Форми (Forms) --- */
+/* --- Форми --- */
 .form-group {
   margin-bottom: 1.25rem;
   display: flex;
@@ -95,38 +92,20 @@
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #334155;
+  color: var(--text-main);
 }
 
 .form-control {
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   background-color: #ffffff;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
 .form-control:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-}
-
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
-}
-
-/* --- 4. Допоміжні бейджі та бейсік елементи --- */
-.badge {
-  display: inline-block;
-  padding: 0.25rem 0.6rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 9999px;
-  background-color: #e0e7ff;
-  color: #3730a3;
+  border-color: var(--primary-color);
 }
