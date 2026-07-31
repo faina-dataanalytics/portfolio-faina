@@ -1,0 +1,144 @@
+/* ==========================================================================
+   HERO SECTION STYLES (Точний дизайн з макету)
+   ========================================================================== */
+
+:root {
+  --hero-bg: #1c4456;        /* Темно-синій фон */
+  --accent-color: #20b2aa;   /* Бірюзовий колір заголовка та ліній */
+  --text-white: #ffffff;
+  --features-bg: #e6ecf0;    /* Світлий фон нижньої панелі */
+}
+
+/* --- Основна темно-синя секція --- */
+.hero-section {
+  background-color: var(--hero-bg);
+  min-height: 480px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Ліва частина - Заголовок */
+.hero-content {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1.5rem;
+  z-index: 2;
+}
+
+.hero-title {
+  color: var(--accent-color);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  color: var(--text-white);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Права частина - Іконки та Фото */
+.hero-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+  z-index: 3;
+}
+
+.social-icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.hero-photo {
+  max-height: 420px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  z-index: 2;
+}
+
+/* --- Нижня світла панель (01, 02, 03) --- */
+.features-bar {
+  background-color: var(--features-bg);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.features-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-text {
+  border-left: 3px solid #b0bec5;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Гексагон (шестикутник) для цифр */
+.feature-hexagon {
+  width: 50px;
+  height: 45px;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #90a4ae;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+}
