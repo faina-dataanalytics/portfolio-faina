@@ -1273,3 +1273,549 @@
     transform: translateX(2px);
 
 }
+
+
+
+
+
+
+/* =========================================================
+   COMPONENT 04
+   ABOUT
+========================================================= */
+
+.about {
+
+    position: relative;
+
+    padding-block: var(--space-section);
+
+    background: var(--color-white);
+
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.about__layout {
+
+    display: grid;
+
+    grid-template-columns: 420px 1fr;
+
+    gap: 6rem;
+
+    align-items: stretch;
+
+}
+
+/* =========================================================
+   LEFT COLUMN
+========================================================= */
+
+.about__sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 3rem;
+
+    background: var(--color-background);
+
+    border-radius: var(--radius-large);
+
+}
+
+/* =========================================================
+   ABOUT CARD
+========================================================= */
+
+.about-card:not(:last-child) {
+
+    margin-bottom: 2.75rem;
+
+}
+
+.about-card__header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.about-card__header img {
+
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+}
+
+.about-card__header h2 {
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+
+    font-size: 1.45rem;
+
+    font-weight: 900;
+
+    line-height: 1.2;
+
+    color: var(--color-dark);
+
+}
+
+.about-card p {
+
+    margin: 0;
+
+    padding-left: 3.9rem;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    color: var(--color-dark);
+
+}
+
+/* =========================================================
+   CV LINK
+========================================================= */
+
+.about__cv {
+
+    margin-top: 3rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid rgba(0,0,0,.08);
+
+}
+
+.about__cv a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    text-decoration: none;
+
+    color: var(--color-dark);
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+.about__cv img {
+
+    width: 42px;
+
+    height: 42px;
+
+}
+
+.about__cv span {
+
+    font-weight: 700;
+
+}
+
+.about__cv a:hover {
+
+    color: var(--color-green);
+
+    transform: translateX(4px);
+
+}
+
+/* =========================================================
+   RIGHT COLUMN
+========================================================= */
+
+.about__content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+.about__intro {
+
+    margin-bottom: 2.5rem;
+
+    font-size: 1.45rem;
+
+    font-weight: 900;
+
+    line-height: 1.45;
+
+    color: var(--color-green);
+
+}
+
+.about__content p {
+
+    margin-bottom: 1.6rem;
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: var(--color-dark);
+
+    text-wrap: pretty;
+
+}
+
+.about__content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.about-card {
+
+    transition:
+        transform .25s ease;
+
+}
+
+.about-card:hover {
+
+    transform: translateX(4px);
+
+}
+
+.about-card__header img {
+
+    transition:
+        transform .25s ease;
+
+}
+
+.about-card:hover .about-card__header img {
+
+    transform: rotate(-6deg);
+
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.about__cv a:focus-visible {
+
+    outline: 3px solid var(--color-green);
+
+    outline-offset: 4px;
+
+    border-radius: 8px;
+
+}
+
+
+
+
+
+/* =========================================================
+   COMPONENT 05
+   CONTACT
+========================================================= */
+
+.contact {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 100svh;
+
+    padding-block: var(--space-section);
+
+    background: var(--color-dark);
+
+    color: var(--color-white);
+
+    overflow: hidden;
+
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.contact .container {
+
+    position: relative;
+
+}
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.contact__social {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    display: flex;
+
+    gap: 1.35rem;
+
+    z-index: 20;
+
+}
+
+.contact__social a {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+
+}
+
+.contact__social img {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: block;
+
+}
+
+.contact__social a:hover {
+
+    transform: translateY(-3px);
+
+    opacity: .85;
+
+}
+
+.contact__social a:focus-visible {
+
+    outline: 3px solid rgba(255,255,255,.8);
+
+    outline-offset: 4px;
+
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.contact__content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    max-width: 760px;
+
+    margin-inline: auto;
+
+}
+
+/* =========================================================
+   SYMBOL
+========================================================= */
+
+.contact__symbol {
+
+    width: min(330px, 38vw);
+
+    height: auto;
+
+    margin-bottom: 3rem;
+
+    opacity: .22;
+
+    pointer-events: none;
+
+    user-select: none;
+
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.contact__content h2 {
+
+    margin-bottom: 1.5rem;
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(2.3rem, 3vw, 3rem);
+
+    font-weight: 900;
+
+    line-height: 1.15;
+
+    color: var(--color-white);
+
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.contact__content p {
+
+    max-width: 640px;
+
+    margin-bottom: 3rem;
+
+    font-size: 1.18rem;
+
+    line-height: 1.85;
+
+    color: rgba(255,255,255,.88);
+
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.button--light {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 220px;
+
+    height: 56px;
+
+    padding-inline: 2rem;
+
+    border: 2px solid rgba(255,255,255,.9);
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: var(--color-white);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    text-transform: uppercase;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        transform .25s ease,
+        border-color .25s ease;
+
+}
+
+.button--light:hover {
+
+    background: var(--color-white);
+
+    color: var(--color-dark);
+
+    transform: translateY(-3px);
+
+}
+
+.button--light:focus-visible {
+
+    outline: 3px solid rgba(255,255,255,.9);
+
+    outline-offset: 5px;
+
+}
+
+/* =========================================================
+   DECORATIVE BACKGROUND
+========================================================= */
+
+.contact::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(255,255,255,.035),
+            transparent 68%);
+
+    pointer-events: none;
+
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .contact__social a,
+    .button--light {
+
+        transition: none;
+
+    }
+
+}
+
+
+
