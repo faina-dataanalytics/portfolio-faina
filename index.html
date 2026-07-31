@@ -208,81 +208,475 @@
 
 
 
-<!-- ===================================================== -->
-<!-- PROJECT DETAILS                                       -->
-<!-- ===================================================== -->
-
-<section class="project-detail-section reverse">
-  <div class="project-detail-container">
-    
-    <!-- В HTML порядок елементів залишається ТИМ САМИМ, 
-         але CSS сам поміняє їх місцями на екрані! -->
-
-    <div class="project-left-col">
-      <div class="project-header-block">
-        <span class="project-badge">Lösungskonzept</span>
-        <h2 class="project-main-title">Risikoanalyse geringer<br>Bieterbeteiligung</h2>
-      </div>
-      <div class="artifact-card">
-        <img src="./assets/svg/artefakt-02.svg" alt="Артефакт 2" class="artifact-image">
-      </div>
-      <a href="https://github.com" target="_blank" class="github-link">
-        <img src="./icons/github.svg" alt="GitHub" class="github-icon">
-        <span>GitHub Repository</span>
-      </a>
-    </div>
-
-    <div class="project-right-col">
-      <div class="info-block">
-        <img src="./icons/target-icon.svg" alt="" class="info-icon">
-        <h3 class="info-title">Projektziel</h3>
-        <p class="info-text">Текст опису другого проєкту...</p>
-      </div>
-    </div>
-
-  </div>
-</section>    
-
-
-
-
 
 
 <!-- ===================================================== -->
 <!-- PROJECTS                                              -->
 <!-- ===================================================== -->
 
-<section class="project-detail-section">
-  <div class="project-detail-container">
-    
-    <!-- Ліва колонка: Заголовок + Схема -->
-    <div class="project-left-col">
-      <div class="project-header-block">
-        <span class="project-badge">Lösungskonzept</span>
-        <h2 class="project-main-title">KI-gestützte<br>Förderantragsprüfung</h2>
-      </div>
-      <div class="artifact-card">
-        <img src="./assets/svg/artefakt-01.svg" alt="Артефакт 1" class="artifact-image">
-      </div>
-      <a href="https://github.com" target="_blank" class="github-link">
-        <img src="./icons/github.svg" alt="GitHub" class="github-icon">
-        <span>GitHub Repository</span>
-      </a>
-    </div>
+<main class="all-projects-wrapper">
 
-    <!-- Права колонка: Опис -->
-    <div class="project-right-col">
-      <div class="info-block">
-        <img src="./icons/target-icon.svg" alt="" class="info-icon">
-        <h3 class="info-title">Projektziel</h3>
-        <p class="info-text">Текст опису першого проєкту...</p>
+  <!-- ================= ПРОЄКТ 1 (Звичайний: Схема зліва, Опис справа) ================= -->
+  <section class="project-detail-section" id="project-01">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Lösungskonzept</span>
+          <h2 class="project-main-title">KI-gestützte<br>Förderantragsprüfung</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-01.svg" alt="AI-Lösungsarchitektur" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
       </div>
-      <!-- Додаткові info-block за потреби -->
-    </div>
 
-  </div>
-</section>
-    
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Förderanträge enthalten große Mengen unstrukturierter Informationen und erfordern einen hohen manuellen Prüfaufwand. Ziel war die Konzeption einer KI-gestützten Lösung, die Dokumente analysiert, relevante Informationen strukturiert und die fachliche Vorprüfung unterstützt.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Business Analysis <span>|</span> Anforderungsanalyse <span>|</span> Dokumentenanalyse <span>|</span> Entscheidungsunterstützung
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            RAG <span>|</span> Prompt Engineering <span>|</span> Informationsmodellierung <span>|</span> Solution Architecture <span>|</span> Azure AI (Konzept)
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Trennung der fachlichen Bewertung von der KI-gestützten Voranalyse.</li>
+            <li>Modularer Aufbau der Lösung zur schrittweisen Erweiterung.</li>
+            <li>Nachvollziebare Entscheidungslogik statt Black-Box-Ansatz.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 2 (Дзеркальний: Опис зліва, Схема справа) ================= -->
+  <section class="project-detail-section reverse" id="project-02">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Analytisches Modell</span>
+          <h2 class="project-main-title">Risikoanalyse geringer<br>Bieterbeteiligung</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-02.svg" alt="Risikoanalyse Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Entwicklung eines datengestützten Ansatzes zur Identifikation von Vergabeverfahren mit hohem Risiko geringer Bieterbeteiligung, um frühzeitig Maßnahmen zur Steigerung des Wettbewerbs einzuleiten.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Historische Vergabeanalyse <span>|</span> Mustererkennung <span>|</span> Risikobewertung
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            Predictive Analytics <span>|</span> decision simulator <span>|</span> Data Mining
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Fokus auf frühzeitige Risikoindikatoren vor Ausschreibungsveröffentlichung.</li>
+            <li>Simulation von Handlungsszenarien zur Optimierung von Vergabeunterlagen.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 3 (Звичайний) ================= -->
+  <section class="project-detail-section" id="project-03">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">KI-Plattform</span>
+          <h2 class="project-main-title">KI-gestützte<br>Wissensplattform</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-03.svg" alt="Wissensplattform Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Konzeption einer zentralen Wissensplattform zur intelligenten Bereitstellung von Unternehmenswissen mittels Retrieval-Augmented Generation (RAG).
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Wissensmanagement <span>|</span> Prozessoptimierung <span>|</span> Enterprise Search
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            RAG <span>|</span> Informationsmodellierung <span>|</span> Vector Databases
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Kombination aus präziser Dokumentensuche und generativer Antwortgenerierung.</li>
+            <li>Strenge Rechte- und Rollenkonzepte für sensible Daten.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 4 (Дзеркальний) ================= -->
+  <section class="project-detail-section reverse" id="project-04">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Prozessoptimierung</span>
+          <h2 class="project-main-title">Digitalisierung der<br>Berichterstattung</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-04.svg" alt="Berichterstattung Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Neugestaltung und Standardisierung des manuellen Berichterstattungsprozesses hin zu einer automatisierten, digitalen Lösung.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Digitale Datenerfassung <span>|</span> Prozessstandardisierung <span>|</span> Reporting Automation
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            Datenmodellierung <span>|</span> ETL Pipelines <span>|</span> BI Dashboarding
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Ablösung manueller Tabellen durch einheitliches Datenmodell.</li>
+            <li>Echtzeit-Validierung bei der Dateneingabe zur Qualitätssicherung.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 5 (Звичайний) ================= -->
+  <section class="project-detail-section" id="project-05">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Data Analytics</span>
+          <h2 class="project-main-title">Internationale Markt- &<br>Kundenanalyse</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-01.svg" alt="Marktanalyse Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Umfassende Analyse globaler Kundensegmente und Marktpotenziale zur strategischen Ausrichtung der Vertriebs- und Marketingaktivitäten.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Marktsegmentierung <span>|</span> Kundenverhalten <span>|</span> Storytelling-Präsentation
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            SQL <span>|</span> Tableau <span>|</span> Customer Lifetime Value (CLV)
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Interaktives Dashboard zur ad-hoc Analyse für das Management.</li>
+            <li>Fokus auf Datenvisualisierung nach IBCS-Standards.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 6 (Дзеркальний) ================= -->
+  <section class="project-detail-section reverse" id="project-06">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Personalplanung</span>
+          <h2 class="project-main-title">Personalplanung für<br>die Grippesaison</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-02.svg" alt="Personalplanung Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Entwicklung eines risikobasierten Modells zur Prognose von Personalausfällen während der Grippesaison zur Sicherstellung des Betriebsablaufs.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Kapazitätsplanung <span>|</span> Risikoanalyse <span>|</span> Workforce Management
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            Tableau <span>|</span> Hypothesentests <span>|</span> Risikoindex
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Frühwarnsystem basierend auf historischen Infektions- und Ausfalldaten.</li>
+            <li>Dynamische Pufferplanung für kritische Fachbereiche.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 7 (Звичайний) ================= -->
+  <section class="project-detail-section" id="project-07">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Business Intelligence</span>
+          <h2 class="project-main-title">Ursachenanalyse von<br>Flugunpünktlichkeiten</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-03.svg" alt="Flugunpünktlichkeiten Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Systematische Untersuchung der Einflussfaktoren auf Verspätungen im Flugbetrieb zur Identifikation primärer Ursachen und Engpässe.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Root Cause Analysis <span>|</span> Operations Management <span>|</span> KPI-Tracking
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            Power BI <span>|</span> Datenmodellierung <span>|</span> KPI-Analyse
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Hierarchische Aufschlüsselung von Verspätungskaskaden.</li>
+            <li>Mustererkennung nach Tageszeit, Wetter und Bodenabfertigung.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ПРОЄКТ 8 (Дзеркальний) ================= -->
+  <section class="project-detail-section reverse" id="project-08">
+    <div class="project-detail-container">
+      
+      <div class="project-left-col">
+        <div class="project-header-block">
+          <span class="project-badge">Machine Learning</span>
+          <h2 class="project-main-title">Prognose risikoreicher<br>Fahrzeugkäufe</h2>
+        </div>
+        <div class="artifact-card">
+          <img src="./assets/svg/artefakt-04.svg" alt="Machine Learning Artefakt" class="artifact-image">
+        </div>
+        <a href="https://github.com" target="_blank" class="github-link">
+          <img src="./icons/github.svg" alt="GitHub" class="github-icon">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+
+      <div class="project-right-col">
+        <div class="info-block">
+          <img src="./icons/target-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Projektziel</h3>
+          <p class="info-text">
+            Entwicklung eines ML-Klassifikationsmodells zur vorzeitigen Erkennung potenzieller Risikokäufe im Automobilhandel zur Ausfallminimierung.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/focus-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Fachlicher Fokus</h3>
+          <p class="info-text inline-tags">
+            Predictive Modeling <span>|</span> Risikominimierung <span>|</span> Fraud Detection
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/tech-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Methoden & Technologien</h3>
+          <p class="info-text inline-tags">
+            Machine Learning <span>|</span> Feature Engineering <span>|</span> Klassifikation
+          </p>
+        </div>
+
+        <div class="info-block">
+          <img src="./icons/lightbulb-icon.svg" alt="" class="info-icon">
+          <h3 class="info-title">Konzeptionelle Entscheidungen</h3>
+          <ul class="custom-bullets">
+            <li>Auswahl interpretierbarer Algorithmen zur Nachvollziehbarkeit der Modellentscheidungen.</li>
+            <li>Kontinuierliches Monitoring der Modellleistung zur Vermeidung von Drift.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+
+
     
     
  
