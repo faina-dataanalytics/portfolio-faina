@@ -1,0 +1,182 @@
+/* ==========================================================================
+   PROJECT DETAIL PAGE STYLES (Точний дизайн сторінки проєкту)
+   ========================================================================== */
+
+:root {
+  --accent-teal: #20b2aa;     /* Бірюзовий колір заголовків */
+  --text-dark: #2c3e50;       /* Колір основного тексту */
+  --border-dark: #1c4456;     /* Темно-синій колір рамки артефакту */
+  --badge-bg: #e6ecf0;        /* Фон плашки "Lösungskonzept" */
+}
+
+.project-detail-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 3rem 0 5rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr; /* Ліва і права колонки */
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ================= ЛІВА КОЛОНКА ================= */
+.project-left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Заголовок із зеленою лінією збоку */
+.project-header-block {
+  border-left: 4px solid var(--accent-teal);
+  padding-left: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.project-badge {
+  display: inline-block;
+  background-color: var(--badge-bg);
+  color: #5a6b7c;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+}
+
+.project-main-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--accent-teal);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Рамка з фото/схемою (Артефакт) */
+.artifact-card {
+  border: 3px solid var(--border-dark);
+  padding: 1.5rem;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artifact-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Посилання GitHub під артефактом */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--accent-teal);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+  opacity: 0.8;
+}
+
+.github-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* ================= ПРАВА КОЛОНКА ================= */
+.project-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding-top: 1rem;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Маленькі іконки над заголовками */
+.info-icon {
+  width: 32px !important;
+  height: 32px !important;
+  object-fit: contain;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+/* Заголовки блоків */
+.info-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--accent-teal);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem 0;
+}
+
+/* Текст блоків */
+.info-text {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Розділювачі | для тегів */
+.inline-tags span {
+  color: var(--accent-teal);
+  font-weight: bold;
+  margin: 0 0.3rem;
+}
+
+/* Маркований список з бірюзовими квадратиками */
+.custom-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.custom-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-teal);
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 900px) {
+  .project-detail-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
