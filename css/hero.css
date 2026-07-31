@@ -26,7 +26,15 @@
   border-left: 4px solid var(--accent-color);
   padding-left: 1.5rem;
   z-index: 2;
+  
+  /* Примусово вирівнюємо текст по центру по вертикалі */
+  align-self: center; 
+  
+  /* Змістіть трохи вгору за потреби, якщо хочеться підняти ще вище */
+  margin-bottom: 2rem; 
 }
+
+
 
 .hero-title {
   color: var(--accent-color);
