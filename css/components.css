@@ -610,3 +610,281 @@
 }
 
 
+
+
+/* =========================================================
+   COMPONENT 03A
+   PROJECT LAYOUT
+========================================================= */
+
+.project {
+
+    position: relative;
+
+    padding-block: var(--space-section);
+
+    background: var(--color-white);
+
+    scroll-margin-top: 3rem;
+
+}
+
+.project:nth-of-type(even) {
+
+    background: var(--color-background);
+
+}
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.project__layout {
+
+    display: grid;
+
+    grid-template-columns: minmax(480px, 620px) 1fr;
+
+    gap: 6rem;
+
+    align-items: start;
+
+}
+
+/* =========================================================
+   REVERSED PROJECT
+========================================================= */
+
+.project--reverse .project__layout {
+
+    grid-template-columns: 1fr minmax(480px, 620px);
+
+}
+
+.project--reverse .project__content {
+
+    order: 1;
+
+}
+
+.project--reverse .project__media {
+
+    order: 2;
+
+}
+
+/* =========================================================
+   LEFT / RIGHT COLUMNS
+========================================================= */
+
+.project__media {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-self: start;
+
+}
+
+.project__content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2.4rem;
+
+}
+
+/* =========================================================
+   TOP DECORATIVE LINE
+========================================================= */
+
+.project__divider {
+
+    width: 225px;
+
+    height: 5px;
+
+    background: var(--color-light-gray);
+
+    margin-bottom: 2.5rem;
+
+}
+
+/* =========================================================
+   PROJECT HEADER
+========================================================= */
+
+.project__hero {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 2.4rem;
+
+}
+
+.project__title {
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(2rem, 2.6vw, 2.5rem);
+
+    font-weight: 900;
+
+    line-height: 1.15;
+
+    margin-bottom: 1rem;
+
+}
+
+.project__title--green {
+
+    color: var(--color-green);
+
+}
+
+.project__title--gray {
+
+    color: var(--color-text-light);
+
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.project__badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: .45rem 1rem;
+
+    border: 2px solid var(--color-gray);
+
+    border-radius: 999px;
+
+    font-size: .78rem;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    text-transform: uppercase;
+
+    background: var(--color-white);
+
+}
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project__figure {
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.project__figure img {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 570px;
+
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+/* =========================================================
+   PROJECT LINKS
+========================================================= */
+
+.project__resources {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+
+    margin-top: 2rem;
+
+}
+
+.project__resources a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .65rem;
+
+    color: var(--color-dark);
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+.project__resources img {
+
+    width: 28px;
+
+    height: 28px;
+
+}
+
+.project__resources span {
+
+    font-size: .95rem;
+
+}
+
+.project__resources a:hover {
+
+    color: var(--color-green);
+
+    transform: translateX(3px);
+
+}
+
+/* =========================================================
+   ANCHOR OFFSET
+========================================================= */
+
+.project::before {
+
+    content: "";
+
+    display: block;
+
+    height: 40px;
+
+    margin-top: -40px;
+
+    visibility: hidden;
+
+}
