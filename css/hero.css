@@ -20,16 +20,6 @@
   align-items: center;
 }
 
-.hero-container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
 
 /* Ліва частина - Заголовок */
 .hero-content {
@@ -58,12 +48,6 @@
 }
 
 /* Права частина - Іконки та Фото */
-.hero-media {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 .social-icons {
   display: flex;
@@ -85,13 +69,46 @@
   transform: scale(1.1);
 }
 
+
+
+/* 1. Оновлюємо контейнер (зменшуємо/прибираємо нижній padding) */
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: зверху 2rem, праворуч 3rem, знизу 0, ліворуч 3rem */
+  padding: 2rem 3rem 0 3rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Вирівнюємо вміст по нижньому краю */
+  position: relative;
+}
+
+/* 2. Переконуємося, що права блок-колонка теж притиснута до низу */
+.hero-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: flex-end; /* Притискає весь блок до низу контейнера */
+}
+
+/* 3. Налаштовуємо саме фото */
 .hero-photo {
-  max-height: 400px;
+  max-height: 420px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
-  display: block;
+  display: block; /* Усуває системний зазор під зображенням */
+  margin-bottom: 0; /* Гарантує відсутність нижнього відступу */
   z-index: 2;
 }
+
+
+
+
+
 
 /* --- Нижня світла панель (01, 02, 03) --- */
 .features-bar {
