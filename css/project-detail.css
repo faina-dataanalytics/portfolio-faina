@@ -180,3 +180,29 @@
     gap: 2.5rem;
   }
 }
+
+
+
+/* ==========================================================================
+   ДЗЕРКАЛЬНЕ РЕГУЛЮВАННЯ ДЛЯ ЧЕРГУВАННЯ (Класи з .reverse)
+   ========================================================================== */
+
+/* Дзеркальне міняння колонок місцями */
+.project-detail-section.reverse .project-detail-container {
+  /* Міняємо напрямок сітки на протилежний */
+  grid-template-areas: "right left";
+}
+
+.project-detail-section.reverse .project-left-col {
+  grid-area: left;
+}
+
+.project-detail-section.reverse .project-right-col {
+  grid-area: right;
+}
+
+/* Розділювач між 8 проєктами (якщо вони на одній сторінці) */
+.project-detail-section {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 4rem 0;
+}
