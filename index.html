@@ -858,36 +858,24 @@
     <!-- CONTACT                                            -->
     <!-- ================================================= -->
 
-    <section
-        id="contact"
-        class="contact">
+ <main class="contact-page-section" style="
+  background-color: #1d4d61 !important; 
+  min-height: calc(100vh - 80px); 
+  width: 100vw; 
+  margin: 0 calc(-50vw + 50%) !important; 
+  padding: 0 !important; 
+  box-sizing: border-box; 
+  position: relative;
+  overflow: hidden;">
 
-        <div class="container">
-
-            <!-- ========================================== -->
-            <!-- CONTACT ICONS                              -->
-            <!-- ========================================== -->
-
-
-        <main class="contact-page-section" style="
-      background-color: #1d4d61 !important; 
-      min-height: calc(100vh - 80px); 
-      width: 100vw; 
-      margin: 0 calc(-50vw + 50%) !important; 
-      padding: 2rem; 
-      box-sizing: border-box; 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center; 
-      position: relative;
-      overflow: hidden;">
+  <!-- ================= ІКОНКИ СОЦМЕРЕЖ (В ПРАВОМУ ВЕРХНЬОМУ КУТІ) ================= -->
+  <div class="social-icons-container" style="
+    position: absolute !important; 
+    top: 2.5rem !important; 
+    right: 3rem !important; 
+    z-index: 10;">
     
-  <!-- ================= БЛОК ІКОНОК З ПЕРШОЇ СТОРІНКИ ================= -->
-  <div style="position: absolute; top: 2.5rem; right: 3rem; z-index: 10;">
-    
-    
-          <div class="social-icons">
+     <div class="social-icons">
             <a href="https://www.linkedin.com/in/fainakozyrieva/" target="_blank" class="social-icon" aria-label="LinkedIn">
               <img src="./assets/icons/linkedin.svg" alt="LinkedIn">   
             </a>
@@ -897,45 +885,58 @@
             <a href="mailto:data.analytikerin@gmail.com" class="social-icon" aria-label="Email">
               <img src="./assets/icons/mail.svg" alt="Email">
             </a>
-          </div>
+      </div>
 
-            
-            
+  </div>
 
-            <!-- ========================================== -->
-            <!-- CONTENT                                    -->
-            <!-- ========================================== -->
+  <!-- ================= ЦЕНТРАЛЬНА ІКОНКА KOMMA СТРОГО ПО ЦЕНТРУ ================= -->
+  <div class="komma-wrapper" style="
+    position: absolute !important; 
+    top: 50% !important; 
+    left: 50% !important; 
+    transform: translate(-50%, -50%) !important; 
+    width: 280px !important; 
+    height: 280px !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: center !important; 
+    margin: 0 !important;
+    z-index: 1;">
+    
+    <!-- SVG Іконка Komma -->
+    <img src="./assets/icons/komma.svg" alt="Lass uns sprechen" style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 1;">
 
-            <div class="contact__content">
+    <!-- Текст всередині іконки -->
+    <h1 style="
+      position: relative;
+      z-index: 2;
+      font-family: 'Roboto', sans-serif !important; 
+      font-size: 2.1rem !important; 
+      font-weight: 800 !important; 
+      color: #111111 !important; 
+      line-height: 1.15 !important; 
+      margin: 0 !important; 
+      padding: 0 0 0 1rem !important; 
+      text-align: left !important; 
+      letter-spacing: -0.5px !important;">
+      Lass<br>uns<br>sprechen!
+    </h1>
 
-                <img
-                    class="contact__symbol"
-                    src="./assets/icons/komma.svg"
-                    alt=""
-                    aria-hidden="true">
-
-                <h2>
-
-                    Lass uns sprechen
-
-                </h2>
-
-
-                <a
-                    class="button button--light"
-                    href="mailto:data.analytikerin@gmail.com">
-
-                    Kontakt aufnehmen
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
+  </div>
 
 </main>
+    
+    
+    
+    
+    
 
 <!-- ===================================================== -->
 <!-- FOOTER                                                 -->
