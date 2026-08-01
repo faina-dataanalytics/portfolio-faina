@@ -26,7 +26,7 @@
   padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  gap: 3rem; /* Зменшено відстань між колонками */
+  gap: 2rem; /* відстань між колонками */
   align-items: start;
 }
 
@@ -43,7 +43,7 @@
 .project-header-block {
   border-left: 4px solid var(--accent-teal);
   padding-left: 1rem;
-  margin-bottom: 2.8rem !important; /* <--- ВІДСТАНЬ ДО АРТЕФАКТУ */
+  margin-bottom: 2.8rem !important; 
 }
 
 .project-badge {
@@ -60,7 +60,7 @@
 .project-main-title {
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--accent-teal);
-  font-size: 2.2rem; /* Трохи компактніший заголовок */
+  font-size: 2.2rem; 
   font-weight: 800;
   line-height: 1.1;
   margin: 0;
@@ -118,7 +118,7 @@
 .project-right-col {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem; /* Компактний відступ між блоками (було 2.2rem) */
+  gap: 1.2rem; 
   padding-top: 0.5rem;
 }
 
@@ -130,10 +130,10 @@
 
 /* Іконки над заголовками */
 .info-icon {
-  width: 40px !important; /* Зменшена іконка */
+  width: 40px !important;
   height: 40px !important;
   object-fit: contain;
-  margin-bottom: 0.2rem !important; /* Прибрано зайвий відступ */
+  margin-bottom: 0.1rem !important; /* Прибрано зайвий відступ */
   display: block;
 }
 
