@@ -143,7 +143,7 @@
   height: 40px !important;
   object-fit: contain;
   padding: 0 !important; 
-  margin: 0 0 0.2rem 0 !important; 
+  margin: 0 0 0.1rem 0 !important; 
   display: block;
 }
 
@@ -153,7 +153,7 @@
   color: var(--accent-teal);
   font-size: 1.2rem;
   font-weight: 700;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.1rem 0;
   line-height: 1.2;
 }
 
