@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- CSS (Залишено тільки існуючі файли у правильному порядку) -->
+    <!-- CSS  -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -131,7 +131,7 @@
 <!-- PROJECT OVERVIEW                                      -->
 <!-- ===================================================== -->
 
-<section class="projects-section">
+<section class="projects-section" id="inhalt">
   <div class="projects-container">
     
     <!-- Ліва колонка: Business Transformation & AI -->
@@ -271,6 +271,23 @@
         </div>
       </div>
 
+
+        <!-- Вставляти внизу секції кожного проєкту перед закриваючим </section> -->
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e0e0e0; display: flex; justify-content: flex-start;">
+          <a href="#inhalt" style="
+            display: inline-flex; 
+            align-items: center; 
+            gap: 0.5rem; 
+            text-decoration: none; 
+            color: #20b2aa; 
+            font-family: 'Roboto Condensed', sans-serif; 
+            font-size: 1.1rem; 
+            font-weight: 700; 
+            transition: transform 0.2s ease;">
+            <span>&larr;</span> Zur Übersicht
+          </a>
+        </div>
+        
     </div>
   </section>
 
@@ -311,7 +328,7 @@
         </div>
 
         <div class="info-block">
-          <img src="./assets/icons/tech-icon.svg" alt="" class="info-icon">
+          <img src="./assets/icons/methoden_technologien.svg" alt="" class="info-icon">
           <h3 class="info-title">Methoden & Technologien</h3>
           <p class="info-text inline-tags">
             Predictive Analytics <span>|</span> decision simulator <span>|</span> Data Mining
