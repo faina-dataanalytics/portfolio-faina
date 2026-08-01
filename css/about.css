@@ -1,58 +1,72 @@
 /* ==========================================================================
-   ABOUT / ARBEITSWEISE PAGE STYLES (Гарантована вертикальна сітка 50/50)
+   ABOUT PAGE (Фон на всю ліву половину)
    ========================================================================== */
 
 :root {
-  --teal-accent: #20b2aa;     /* Бірюзовий колір */
-  --bg-left-gray: #e8ecef;    /* Сірий фон лівої колонки */
-  --text-dark: #2c3e50;       /* Основний колір тексту */
+  --teal-accent: #20b2aa;
+  --bg-left-gray: #e8ecef; /* Сірий колір лівої частини */
+  --text-dark: #2c3e50;
 }
 
-/* Скидання обмежень ширини для всієї секції */
-main.about-section,
-.about-section {
-  display: grid !important;
-  grid-template-columns: 50% 50% !important; /* Чітко 50% зліва і 50% справа */
-  width: 100vw !important;
-  max-width: 100vw !important;
-  min-height: calc(100vh - 80px);
-  margin: 0 calc(-50vw + 50%) !important; /* Виходить за межі будь-яких обмежувальних контейнерів */
+/* Прибираємо зовнішні відступи та розтягуємо секцію */
+.about-page-override {
   padding: 0 !important;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
+  margin: 0 !important;
+  width: 100%;
+  min-height: calc(100vh - 80px); /* розтягує на всю висоту екрана */
 }
 
-/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= */
-.about-left-col {
-  background-color: var(--bg-left-gray) !important;
-  display: flex !important;
-  justify-content: flex-end !important; /* Присуває вміст до центральної лінії */
-  padding: 5rem 4rem 4rem 2rem;
-  box-sizing: border-box;
+/* Контейнер сітки: розтягуємо на 100% ширини без бокових padding */
+.about-page-override .project-detail-container {
+  max-width: 100% !important;
   width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: calc(100vh - 80px);
+  align-items: stretch; /* Робить обидві колонки однаковими за висотою */
 }
 
-.about-left-content {
-  max-width: 400px;
+/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН НА ВСЮ ШИРИНУ Й ВИСОТУ) ================= */
+.about-left-box {
+  background-color: var(--bg-left-gray) !important;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  align-items: flex-end; /* Присуває контент ближче до центральної лінії */
+  justify-content: flex-start;
+  padding: 4rem 3rem 4rem 2rem;
+  box-sizing: border-box;
 }
 
-.sidebar-block {
+/* Обгортка для внутрішнього контенту лівої колонки, щоб текст не розповзався */
+.about-left-box .sidebar-block {
+  width: 100%;
+  max-width: 360px; /* Фіксована ширина контенту всередині сірої зони */
+  margin-bottom: 3rem;
+}
+
+/* ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= */
+.about-right-box {
+  background-color: #ffffff;
+  padding: 4rem 2rem 4rem 4rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
+
+.about-right-box .hero-statements,
+.about-right-box .about-text-body {
+  max-width: 580px; /* Комфортна ширина для читання */
+}
+
+/* --- ВНУТРІШНІ СТИЛІ ЕЛЕМЕНТІВ --- */
 
 .sidebar-icon {
   width: 36px !important;
   height: 36px !important;
-  max-width: 36px !important;
   object-fit: contain;
   margin-bottom: 0.5rem;
-  display: block;
 }
 
 .sidebar-title {
@@ -63,7 +77,6 @@ main.about-section,
   margin: 0 0 0.8rem 0;
 }
 
-/* Список із квадратиками */
 .sidebar-list {
   list-style: none !important;
   padding: 0 !important;
@@ -76,7 +89,7 @@ main.about-section,
   color: var(--text-dark);
   font-size: 1.05rem;
   line-height: 1.4;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .sidebar-list li::before {
@@ -89,25 +102,8 @@ main.about-section,
   background-color: var(--teal-accent);
 }
 
-/* ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= */
-.about-right-col {
-  background-color: #ffffff !important;
-  display: flex !important;
-  justify-content: flex-start !important; /* Присуває вміст до центральної лінії */
-  padding: 5rem 2rem 4rem 4rem;
-  box-sizing: border-box;
-  width: 100% !important;
-}
-
-.about-right-content {
-  max-width: 580px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .hero-statements {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .statement-item {
@@ -124,12 +120,11 @@ main.about-section,
   font-size: 1.1rem;
   line-height: 1.55;
   margin-bottom: 1.5rem;
-  font-weight: 400;
 }
 
-/* Lebenslauf / CV */
 .resume-wrapper {
-  margin-top: 3rem;
+  margin-top: auto;
+  padding-top: 2rem;
 }
 
 .resume-link {
@@ -145,23 +140,6 @@ main.about-section,
 .resume-icon {
   width: 42px !important;
   height: 42px !important;
-  max-width: 42px !important;
   object-fit: contain;
   margin-bottom: 0.3rem;
-}
-
-/* Адаптивність для смартфонів */
-@media (max-width: 900px) {
-  main.about-section,
-  .about-section {
-    grid-template-columns: 100% !important;
-    margin: 0 !important;
-    width: 100% !important;
-  }
-
-  .about-left-col,
-  .about-right-col {
-    justify-content: center !important;
-    padding: 3rem 1.5rem;
-  }
 }
