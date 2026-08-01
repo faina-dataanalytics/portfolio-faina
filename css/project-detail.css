@@ -93,7 +93,7 @@
 .github-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.05rem;
   text-decoration: none;
   color: var(--accent-teal);
   font-weight: 700;
@@ -130,12 +130,20 @@
 }
 
 /* Іконки над заголовками */
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important; 
+  text-align: left !important;
+}
+
+/* Іконки над заголовками */
 .info-icon {
   width: 40px !important;
   height: 40px !important;
-  align-items: link;
   object-fit: contain;
   padding: 0 !important; 
+  margin: 0 0 0.2rem 0 !important; 
   display: block;
 }
 
@@ -143,11 +151,12 @@
 .info-title {
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--accent-teal);
-  font-size: 1.2rem; /* Компактний шрифт */
+  font-size: 1.2rem;
   font-weight: 700;
-  margin: 0 0 0.2rem 0; /* Зменшений відступ до тексту */
+  margin: 0 0 0.2rem 0;
   line-height: 1.2;
 }
+
 
 /* Основний текст */
 .info-text {
