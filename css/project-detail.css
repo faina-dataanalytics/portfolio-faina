@@ -14,7 +14,7 @@
 .project-detail-section {
   width: 100%;
   background-color: #ffffff;
-  padding: 2.5rem 0; /* Зменшено вертикальні відступи */
+  padding: 2rem 0; /* вертикальні відступи */
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #e6ecf0;
   box-sizing: border-box;
@@ -43,7 +43,7 @@
 .project-header-block {
   border-left: 4px solid var(--accent-teal);
   padding-left: 1rem;
-  margin-bottom: 2.2rem !important; /* <--- ВІДСТАНЬ ДО АРТЕФАКТУ */
+  margin-bottom: 2.8rem !important; /* <--- ВІДСТАНЬ ДО АРТЕФАКТУ */
 }
 
 .project-badge {
@@ -69,8 +69,8 @@
 
 /* Рамка з фото/схемою */
 .artifact-card {
-  border: none !important;      /* Прибираємо зовнішню CSS-рамку */
-  padding: 0 !important;         /* Прибираємо відступи навколо зображення */
+  border: none !important;      
+  padding: 0 !important;         
   margin-bottom: 1rem;
   width: 100%;
   background-color: transparent;
@@ -81,7 +81,7 @@
 }
   
 .artifact-image {
-  width: 100%;                   /* Розтягуємо зображення на всю ширину колонки */
+  width: 100%;                   
   height: auto;
   display: block;
   object-fit: contain;
@@ -106,8 +106,8 @@
 }
 
 .github-icon {
-  width: 24px;
-  height: 24px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
@@ -130,8 +130,8 @@
 
 /* Іконки над заголовками */
 .info-icon {
-  width: 26px !important; /* Зменшена іконка */
-  height: 26px !important;
+  width: 40px !important; /* Зменшена іконка */
+  height: 40px !important;
   object-fit: contain;
   margin-bottom: 0.2rem !important; /* Прибрано зайвий відступ */
   display: block;
@@ -141,7 +141,7 @@
 .info-title {
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--accent-teal);
-  font-size: 1.35rem; /* Компактний шрифт */
+  font-size: 1.2rem; /* Компактний шрифт */
   font-weight: 700;
   margin: 0 0 0.3rem 0; /* Зменшений відступ до тексту */
   line-height: 1.2;
@@ -151,7 +151,7 @@
 .info-text {
   color: var(--text-dark);
   font-size: 0.98rem;
-  line-height: 1.35; /* Щільний міжрядковий інтервал */
+  line-height: 1.2; /* Щільний міжрядковий інтервал */
   margin: 0;
 }
 
