@@ -92,7 +92,7 @@
 /* Посилання GitHub */
 .github-link {
   display: inline-flex;
-  align-items: center;
+  align-items: link;
   gap: 0.4rem;
   text-decoration: none;
   color: var(--accent-teal);
@@ -132,6 +132,7 @@
 .info-icon {
   width: 40px !important;
   height: 40px !important;
+  align-items: link;
   object-fit: contain;
   padding: 0 !important; 
   display: block;
