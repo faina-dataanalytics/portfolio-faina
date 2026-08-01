@@ -69,21 +69,25 @@
 
 /* Рамка з фото/схемою */
 .artifact-card {
-  border: 3px solid var(--border-dark);
-  padding: 1rem;
-  background-color: #ffffff;
+  border: none !important;      /* Прибираємо зовнішню CSS-рамку */
+  padding: 0 !important;         /* Прибираємо відступи навколо зображення */
   margin-bottom: 1rem;
+  width: 100%;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .artifact-image {
-  max-width: 100%;
+  width: 100%;                   /* Розтягуємо зображення на всю ширину колонки */
   height: auto;
   display: block;
   object-fit: contain;
 }
+
+
 
 /* Посилання GitHub */
 .github-link {
