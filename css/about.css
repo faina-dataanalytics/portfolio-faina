@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ABOUT / ARBEITSWEISE PAGE STYLES (Двокольоровий розділений макет)
+   ABOUT / ARBEITSWEISE PAGE STYLES (Вертикальний 50/50 макет)
    ========================================================================== */
 
 :root {
@@ -7,26 +7,30 @@
   --bg-left-gray: #e8ecef;    /* Сірий фон лівої колонки */
   --text-dark: #2c3e50;       /* Основний колір тексту */
 }
-  
-/* Контейнер всієї сторінки (50% / 50%) */
-.about-page-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: calc(100vh - 80px); /* розтягує на всю висоту екрана */
-  width: 100%;
+
+/* Примусово скидаємо margins та задаємо 2 рівні вертикальні колонки */
+main.about-section,
+.about-section {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important; /* 50% ліворуч, 50% праворуч */
+  min-height: calc(100vh - 80px); /* Розтягується на всю висоту екрана */
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: 'Roboto', sans-serif;
 }
 
-/* ================= ЛІВА СТОРОНА ================= */
+/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН НА ВСЮ ВИСОТУ) ================= */
 .about-left-col {
-  background-color: var(--bg-left-gray);
-  display: flex;
-  justify-content: flex-end; /* Вирівнюємо вміст ближче до центру */
+  background-color: var(--bg-left-gray) !important;
+  display: flex !important;
+  justify-content: flex-end !important; /* Вміст присунений до центру */
   padding: 5rem 4rem 4rem 2rem;
+  box-sizing: border-box;
 }
 
 .about-left-content {
-  max-width: 420px;
+  max-width: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -40,10 +44,12 @@
 }
 
 .sidebar-icon {
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
   object-fit: contain;
   margin-bottom: 0.5rem;
+  display: block;
 }
 
 .sidebar-title {
@@ -54,11 +60,11 @@
   margin: 0 0 0.8rem 0;
 }
 
-/* Список з квадратними маркерами */
+/* Список із квадратиками */
 .sidebar-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .sidebar-list li {
@@ -80,12 +86,13 @@
   background-color: var(--teal-accent);
 }
 
-/* ================= ПРАВА СТОРОНА ================= */
+/* ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= */
 .about-right-col {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: flex-start; /* Вирівнюємо вміст ближче до центру */
+  background-color: #ffffff !important;
+  display: flex !important;
+  justify-content: flex-start !important; /* Вміст присунений до центру */
   padding: 5rem 2rem 4rem 4rem;
+  box-sizing: border-box;
 }
 
 .about-right-content {
@@ -95,7 +102,6 @@
   flex-direction: column;
 }
 
-/* 3 бірюзові тези-заголовки */
 .hero-statements {
   margin-bottom: 2.5rem;
 }
@@ -109,7 +115,6 @@
   margin: 0 0 0.4rem 0;
 }
 
-/* Основні текстові абзаци */
 .about-text-body p {
   color: var(--text-dark);
   font-size: 1.1rem;
@@ -118,7 +123,7 @@
   font-weight: 400;
 }
 
-/* Блок Lebenslauf (CV) */
+/* Lebenslauf / CV */
 .resume-wrapper {
   margin-top: 3rem;
 }
@@ -131,29 +136,26 @@
   color: var(--teal-accent);
   font-size: 0.9rem;
   font-weight: 500;
-  transition: opacity 0.2s ease;
-}
-
-.resume-link:hover {
-  opacity: 0.8;
 }
 
 .resume-icon {
-  width: 42px;
-  height: 42px;
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
   object-fit: contain;
   margin-bottom: 0.3rem;
 }
 
-/* Адаптивність під мобільні пристрої */
+/* Адаптивність для смартфонів */
 @media (max-width: 900px) {
-  .about-page-section {
-    grid-template-columns: 1fr; /* Перехід в 1 колонку на мобільних */
+  main.about-section,
+  .about-section {
+    grid-template-columns: 1fr !important; /* На мобільних колонка стає 1 під 1 */
   }
 
-  .about-left-col, 
+  .about-left-col,
   .about-right-col {
-    justify-content: center;
+    justify-content: center !important;
     padding: 3rem 1.5rem;
   }
 }
