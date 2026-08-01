@@ -133,7 +133,7 @@
   width: 40px !important;
   height: 40px !important;
   object-fit: contain;
-  margin-bottom: 0.1rem !important; /* Прибрано зайвий відступ */
+  padding: 0 !important; 
   display: block;
 }
 
@@ -143,7 +143,7 @@
   color: var(--accent-teal);
   font-size: 1.2rem; /* Компактний шрифт */
   font-weight: 700;
-  margin: 0 0 0.3rem 0; /* Зменшений відступ до тексту */
+  margin: 0 0 0.2rem 0; /* Зменшений відступ до тексту */
   line-height: 1.2;
 }
 
