@@ -1,0 +1,64 @@
+<main class="about-page-section">
+  
+  <!-- ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= -->
+  <div class="about-left-col">
+    <div class="about-left-content">
+      
+      <!-- Блок 1: Arbeitsweise -->
+      <div class="sidebar-block">
+        <img src="./assets/icons/arbeitsweise.svg" alt="" class="sidebar-icon">
+        <h2 class="sidebar-title">Arbeitsweise</h2>
+        <ul class="sidebar-list">
+          <li>Fachliche Anforderungen verstehen</li>
+          <li>Informationen strukturieren</li>
+          <li>Komplexität reduzieren</li>
+        </ul>
+      </div>
+
+      <!-- Блок 2: Schwerpunkte -->
+      <div class="sidebar-block">
+        <img src="./assets/icons/schwerpunkte.svg" alt="" class="sidebar-icon">
+        <h2 class="sidebar-title">Schwerpunkte</h2>
+        <ul class="sidebar-list">
+          <li>Business Analysis</li>
+          <li>Datenbasierte Entscheidungsunterstützung</li>
+          <li>KI-gestützte Lösungskonzepte</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= -->
+  <div class="about-right-col">
+    <div class="about-right-content">
+      
+      <!-- Бірюзові тези-заголовки -->
+      <div class="hero-statements">
+        <h1 class="statement-item">Informationen strukturieren.</h1>
+        <h1 class="statement-item">Prozesse verbessern.</h1>
+        <h1 class="statement-item">Fundierte Entscheidungen ermöglichen.</h1>
+      </div>
+
+      <!-- Текстові абзаци -->
+      <div class="about-text-body">
+        <p>
+          Diese drei Prinzipien verbinden alle Projekte dieses Portfolios. Unabhängig davon, ob es um Business Analysis, Reporting, Data Analytics oder KI-gestützte Lösungskonzepte geht, steht immer dieselbe Fragestellung im Mittelpunkt: Wie lassen sich komplexe fachliche Anforderungen in nachvollziehbare, skalierbare und praxisnahe Lösungen übersetzen?
+        </p>
+        <p>
+          Erfolgreiche Digitalisierung beginnt nicht mit Technologie, sondern mit einem klaren Verständnis des fachlichen Problems. Deshalb stehen Analyse, Strukturierung und fundierte Entscheidungen im Mittelpunkt meiner Arbeitsweise.
+        </p>
+      </div>
+
+      <!-- Посилання / Іконка Lebenslauf -->
+      <div class="resume-wrapper">
+        <a href="./assets/cv.pdf" target="_blank" class="resume-link">
+          <img src="./icons/user-icon.svg" alt="Lebenslauf" class="resume-icon">
+          <span>Lebenslauf</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</main>
