@@ -200,6 +200,7 @@
 .theme-blue .project-main-title,
 .theme-blue .info-title,
 .theme-blue .github-link,
+.theme-blue .info-icon,
 .theme-blue .inline-tags span {
   color: var(--accent-blue);
 }
