@@ -92,8 +92,8 @@
 /* Посилання GitHub */
 .github-link {
   display: inline-flex;
-  align-items: link;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.2rem;
   text-decoration: none;
   color: var(--accent-teal);
   font-weight: 700;
@@ -109,6 +109,7 @@
   width: 45px;
   height: 45px;
   object-fit: contain;
+  display: block;
 }
 
 /* ==========================================================================
