@@ -1,64 +1,159 @@
-<main class="about-page-section">
-  
-  <!-- ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= -->
-  <div class="about-left-col">
-    <div class="about-left-content">
-      
-      <!-- Блок 1: Arbeitsweise -->
-      <div class="sidebar-block">
-        <img src="./assets/icons/arbeitsweise.svg" alt="" class="sidebar-icon">
-        <h2 class="sidebar-title">Arbeitsweise</h2>
-        <ul class="sidebar-list">
-          <li>Fachliche Anforderungen verstehen</li>
-          <li>Informationen strukturieren</li>
-          <li>Komplexität reduzieren</li>
-        </ul>
-      </div>
+/* ==========================================================================
+   ABOUT / ARBEITSWEISE PAGE STYLES (Двокольоровий розділений макет)
+   ========================================================================== */
 
-      <!-- Блок 2: Schwerpunkte -->
-      <div class="sidebar-block">
-        <img src="./assets/icons/schwerpunkte.svg" alt="" class="sidebar-icon">
-        <h2 class="sidebar-title">Schwerpunkte</h2>
-        <ul class="sidebar-list">
-          <li>Business Analysis</li>
-          <li>Datenbasierte Entscheidungsunterstützung</li>
-          <li>KI-gestützte Lösungskonzepte</li>
-        </ul>
-      </div>
+:root {
+  --teal-accent: #20b2aa;     /* Бірюзовий колір */
+  --bg-left-gray: #e8ecef;    /* Сірий фон лівої колонки */
+  --text-dark: #2c3e50;       /* Основний колір тексту */
+}
 
-    </div>
-  </div>
+/* Контейнер всієї сторінки (50% / 50%) */
+.about-page-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 80px); /* розтягує на всю висоту екрана */
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
 
-  <!-- ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= -->
-  <div class="about-right-col">
-    <div class="about-right-content">
-      
-      <!-- Бірюзові тези-заголовки -->
-      <div class="hero-statements">
-        <h1 class="statement-item">Informationen strukturieren.</h1>
-        <h1 class="statement-item">Prozesse verbessern.</h1>
-        <h1 class="statement-item">Fundierte Entscheidungen ermöglichen.</h1>
-      </div>
+/* ================= ЛІВА СТОРОНА ================= */
+.about-left-col {
+  background-color: var(--bg-left-gray);
+  display: flex;
+  justify-content: flex-end; /* Вирівнюємо вміст ближче до центру */
+  padding: 5rem 4rem 4rem 2rem;
+}
 
-      <!-- Текстові абзаци -->
-      <div class="about-text-body">
-        <p>
-          Diese drei Prinzipien verbinden alle Projekte dieses Portfolios. Unabhängig davon, ob es um Business Analysis, Reporting, Data Analytics oder KI-gestützte Lösungskonzepte geht, steht immer dieselbe Fragestellung im Mittelpunkt: Wie lassen sich komplexe fachliche Anforderungen in nachvollziehbare, skalierbare und praxisnahe Lösungen übersetzen?
-        </p>
-        <p>
-          Erfolgreiche Digitalisierung beginnt nicht mit Technologie, sondern mit einem klaren Verständnis des fachlichen Problems. Deshalb stehen Analyse, Strukturierung und fundierte Entscheidungen im Mittelpunkt meiner Arbeitsweise.
-        </p>
-      </div>
+.about-left-content {
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
 
-      <!-- Посилання / Іконка Lebenslauf -->
-      <div class="resume-wrapper">
-        <a href="./assets/cv.pdf" target="_blank" class="resume-link">
-          <img src="./icons/user-icon.svg" alt="Lebenslauf" class="resume-icon">
-          <span>Lebenslauf</span>
-        </a>
-      </div>
+.sidebar-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-    </div>
-  </div>
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
 
-</main>
+.sidebar-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--teal-accent);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+}
+
+/* Список з квадратними маркерами */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.sidebar-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 7px;
+  height: 7px;
+  background-color: var(--teal-accent);
+}
+
+/* ================= ПРАВА СТОРОНА ================= */
+.about-right-col {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start; /* Вирівнюємо вміст ближче до центру */
+  padding: 5rem 2rem 4rem 4rem;
+}
+
+.about-right-content {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3 бірюзові тези-заголовки */
+.hero-statements {
+  margin-bottom: 2.5rem;
+}
+
+.statement-item {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--teal-accent);
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.4rem 0;
+}
+
+/* Основні текстові абзаци */
+.about-text-body p {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+/* Блок Lebenslauf (CV) */
+.resume-wrapper {
+  margin-top: 3rem;
+}
+
+.resume-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--teal-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.resume-link:hover {
+  opacity: 0.8;
+}
+
+.resume-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  margin-bottom: 0.3rem;
+}
+
+/* Адаптивність під мобільні пристрої */
+@media (max-width: 900px) {
+  .about-page-section {
+    grid-template-columns: 1fr; /* Перехід в 1 колонку на мобільних */
+  }
+
+  .about-left-col, 
+  .about-right-col {
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+}
