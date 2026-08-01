@@ -79,7 +79,7 @@
   align-items: center;
   overflow: hidden;
 }
-
+  
 .artifact-image {
   width: 100%;                   /* Розтягуємо зображення на всю ширину колонки */
   height: auto;
