@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ABOUT / ARBEITSWEISE PAGE STYLES (Вертикальний 50/50 макет)
+   ABOUT / ARBEITSWEISE PAGE STYLES (Гарантована вертикальна сітка 50/50)
    ========================================================================== */
 
 :root {
@@ -8,25 +8,28 @@
   --text-dark: #2c3e50;       /* Основний колір тексту */
 }
 
-/* Примусово скидаємо margins та задаємо 2 рівні вертикальні колонки */
+/* Скидання обмежень ширини для всієї секції */
 main.about-section,
 .about-section {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important; /* 50% ліворуч, 50% праворуч */
-  min-height: calc(100vh - 80px); /* Розтягується на всю висоту екрана */
-  width: 100% !important;
-  margin: 0 !important;
+  grid-template-columns: 50% 50% !important; /* Чітко 50% зліва і 50% справа */
+  width: 100vw !important;
+  max-width: 100vw !important;
+  min-height: calc(100vh - 80px);
+  margin: 0 calc(-50vw + 50%) !important; /* Виходить за межі будь-яких обмежувальних контейнерів */
   padding: 0 !important;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН НА ВСЮ ВИСОТУ) ================= */
+/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= */
 .about-left-col {
   background-color: var(--bg-left-gray) !important;
   display: flex !important;
-  justify-content: flex-end !important; /* Вміст присунений до центру */
+  justify-content: flex-end !important; /* Присуває вміст до центральної лінії */
   padding: 5rem 4rem 4rem 2rem;
   box-sizing: border-box;
+  width: 100% !important;
 }
 
 .about-left-content {
@@ -90,9 +93,10 @@ main.about-section,
 .about-right-col {
   background-color: #ffffff !important;
   display: flex !important;
-  justify-content: flex-start !important; /* Вміст присунений до центру */
+  justify-content: flex-start !important; /* Присуває вміст до центральної лінії */
   padding: 5rem 2rem 4rem 4rem;
   box-sizing: border-box;
+  width: 100% !important;
 }
 
 .about-right-content {
@@ -150,7 +154,9 @@ main.about-section,
 @media (max-width: 900px) {
   main.about-section,
   .about-section {
-    grid-template-columns: 1fr !important; /* На мобільних колонка стає 1 під 1 */
+    grid-template-columns: 100% !important;
+    margin: 0 !important;
+    width: 100% !important;
   }
 
   .about-left-col,
