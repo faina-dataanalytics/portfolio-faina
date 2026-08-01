@@ -56,21 +56,59 @@
 }
 
 /* Права частина - Іконки та Фото */
+/* ==========================================================================
+   HERO / CONTACT MEDIA & SOCIAL ICONS STYLES
+   ========================================================================== */
 
+/* 1. Контейнер секції */
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 3rem 0 3rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Вирівнюємо вміст по нижньому краю на десктопі */
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* 2. Права блок-колонка (Фото + Іконки) */
+.hero-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+/* 3. Фотографії */
+.hero-photo {
+  max-height: 420px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+/* 4. Іконки соцмереж / контактів */
 .social-icons {
   display: flex;
-  gap: 12px;
-  margin-bottom: 1rem;
+  gap: 16px;            /* Трохи збільшено простір між збільшеними іконками */
+  margin-bottom: 1.2rem;
   z-index: 3;
 }
 
 .social-icon img {
-  width: 36px;
-  height: 36px;
+  width: 46px;          /* ЗБІЛЬШЕНО: було 36px */
+  height: 46px;         /* ЗБІЛЬШЕНО: було 36px */
   border-radius: 50%;
   object-fit: contain;
   display: block;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .social-icon:hover img {
@@ -78,40 +116,36 @@
 }
 
 
+/* ==========================================================================
+   АДАПТИВНІСТЬ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (Планшети та телефони)
+   ========================================================================== */
 
-/* 1. Оновлюємо контейнер (зменшуємо/прибираємо нижній padding) */
-.hero-container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  /* padding: зверху 2rem, праворуч 3rem, знизу 0, ліворуч 3rem */
-  padding: 2rem 3rem 0 3rem; 
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; /* Вирівнюємо вміст по нижньому краю */
-  position: relative;
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;        /* Перебудовуємо текст і фото один під одного */
+    align-items: center;           /* Центруємо вміст */
+    padding: 1.5rem 1rem 0 1rem;   /* Зменшуємо бічні відступи для малих екранів */
+    gap: 2rem;                     /* Відступ між текстовим блоком та фото */
+  }
+
+  .hero-media {
+    align-items: center;           /* Центруємо фото та іконки на мобільному */
+    align-self: center;
+    width: 100%;
+  }
+
+  .hero-photo {
+    max-height: 320px;             /* Трохи зменшуємо фото, щоб воно вміщалося на екран */
+  }
+
+  .social-icons {
+    justify-content: center;       /* Іконки вирівнюються по центру під/над фото */
+    gap: 14px;
+    margin-bottom: 1rem;
+  }
 }
 
-/* 2. Переконуємося, що права блок-колонка теж притиснута до низу */
-.hero-media {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  align-self: flex-end; /* Притискає весь блок до низу контейнера */
-}
 
-/* 3. Налаштовуємо саме фото */
-.hero-photo {
-  max-height: 420px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-  display: block; /* Усуває системний зазор під зображенням */
-  margin-bottom: 0; /* Гарантує відсутність нижнього відступу */
-  z-index: 2;
-}
 
 
 
