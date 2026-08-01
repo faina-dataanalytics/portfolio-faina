@@ -66,8 +66,8 @@
 /* --- ТЕКСТИ ТА ІКОНКИ --- */
 
 .sidebar-icon {
-  width: 36px !important;
-  height: 36px !important;
+  width: 55px !important;
+  height: 55px !important;
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
