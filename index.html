@@ -734,67 +734,118 @@
     <!-- ABOUT                                             -->
     <!-- ================================================= -->
 
-    <main class="project-detail-section about-page-override">
-  <div class="project-detail-container">
+   <main class="project-detail-section about-page-override" style="padding: 0 !important; margin: 0 !important; width: 100%; min-height: calc(100vh - 80px);">
+  <div class="project-detail-container" style="max-width: 100% !important; width: 100% !important; padding: 0 !important; margin: 0 !important; min-height: calc(100vh - 80px); display: flex !important; align-items: stretch !important;">
     
-    <!-- Ліва колонка (Arbeitsweise та Schwerpunkte) -->
-    <div class="project-left-col about-left-box">
+    <!-- ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= -->
+    <div class="project-left-col about-left-box" style="background-color: #e8ecef !important; background: #e8ecef !important; flex: 1 !important; width: 50% !important; padding: 4rem 3rem 4rem 2rem !important; box-sizing: border-box !important; display: flex !important; flex-direction: column !important; align-items: flex-end !important;">
       
-      <div class="sidebar-block">
-        <img src="./assets/icons/arbeitsweise.svg" alt="" class="sidebar-icon">
-        <h2 class="sidebar-title">Arbeitsweise</h2>
-        <ul class="sidebar-list">
-          <li>Fachliche Anforderungen verstehen</li>
-          <li>Informationen strukturieren</li>
-          <li>Komplexität reduzieren</li>
-        </ul>
-      </div>
+      <div style="width: 100%; max-width: 360px;">
+        
+        <!-- Блок Arbeitsweise -->
+        <div class="sidebar-block" style="margin-bottom: 3.5rem;">
+          <img src="./assets/icons/arbeitsweise.svg" alt="" class="sidebar-icon" style="width: 36px; height: 36px; object-fit: contain; margin-bottom: 0.5rem; display: block;">
+          <h2 class="sidebar-title" style="font-family: 'Roboto Condensed', sans-serif; color: #20b2aa; font-size: 1.8rem; font-weight: 700; margin: 0 0 0.8rem 0;">Arbeitsweise</h2>
+          <ul class="sidebar-list" style="list-style: none; padding: 0; margin: 0;">
+            <li style="position: relative; padding-left: 1.3rem; color: #2c3e50; font-size: 1.05rem; line-height: 1.4; margin-bottom: 0.5rem;">
+              <span style="position: absolute; left: 0; top: 0.45em; width: 7px; height: 7px; background-color: #20b2aa;"></span>
+              Fachliche Anforderungen verstehen
+            </li>
+            <li style="position: relative; padding-left: 1.3rem; color: #2c3e50; font-size: 1.05rem; line-height: 1.4; margin-bottom: 0.5rem;">
+              <span style="position: absolute; left: 0; top: 0.45em; width: 7px; height: 7px; background-color: #20b2aa;"></span>
+              Informationen strukturieren
+            </li>
+            <li style="position: relative; padding-left: 1.3rem; color: #2c3e50; font-size: 1.05rem; line-height: 1.4; margin-bottom: 0.5rem;">
+              <span style="position: absolute; left: 0; top: 0.45em; width: 7px; height: 7px; background-color: #20b2aa;"></span>
+              Komplexität reduzieren
+            </li>
+          </ul>
+        </div>
 
-      <div class="sidebar-block">
-        <img src="./assets/icons/schwerpunkte.svg" alt="" class="sidebar-icon">
-        <h2 class="sidebar-title">Schwerpunkte</h2>
-        <ul class="sidebar-list">
-          <li>Business Analysis</li>
-          <li>Datenbasierte Entscheidungsunterstützung</li>
-          <li>KI-gestützte Lösungskonzepte</li>
-        </ul>
+        <!-- Блок Schwerpunkte -->
+        <div class="sidebar-block">
+          <img src="./assets/icons/schwerpunkte.svg" alt="" class="sidebar-icon" style="width: 36px; height: 36px; object-fit: contain; margin-bottom: 0.5rem; display: block;">
+          <h2 class="sidebar-title" style="font-family: 'Roboto Condensed', sans-serif; color: #20b2aa; font-size: 1.8rem; font-weight: 700; margin: 0 0 0.8rem 0;">Schwerpunkte</h2>
+          <ul class="sidebar-list" style="list-style: none; padding: 0; margin: 0;">
+            <li style="position: relative; padding-left: 1.3rem; color: #2c3e50; font-size: 1.05rem; line-height: 1.4; margin-bottom: 0.5rem;">
+              <span style="position: absolute; left: 0; top: 0.45em; width: 7px; height: 7px; background-color: #20b2aa;"></span>
+              Business Analysis
+            </li>
+            <li style="position: relative; padding-left: 1.3rem; color: #2c3e50; font-size: 1.05rem; line-height: 1.4; margin-bottom: 0.5rem;">
+              <span style="position: absolute; left: 0; top: 0.45em; width: 7px; height: 7px; background-color: #20b2aa;"></span>
+              Datenbasierte Entscheidungsunterstützung
+            </li>
+            <li style="position: relative; padding-left: 1.3rem; color: #2c3e50; font-size: 1.05rem; line-height: 1.4; margin-bottom: 0.5rem;">
+              <span style="position: absolute; left: 0; top: 0.45em; width: 7px; height: 7px; background-color: #20b2aa;"></span>
+              KI-gestützte Lösungskonzepte
+            </li>
+          </ul>
+        </div>
+
       </div>
 
     </div>
 
-    <!-- Права колонка (Основний текст) -->
-    <div class="project-right-col about-right-box">
+    <!-- ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= -->
+    <div class="project-right-col about-right-box" style="background-color: #ffffff !important; flex: 1 !important; width: 50% !important; padding: 4rem 2rem 4rem 4rem !important; box-sizing: border-box !important; display: flex !important; flex-direction: column !important;">
       
-      <div class="hero-statements">
-        <h1 class="statement-item">Informationen strukturieren.</h1>
-        <h1 class="statement-item">Prozesse verbessern.</h1>
-        <h1 class="statement-item">Fundierte Entscheidungen ermöglichen.</h1>
-      </div>
+      <div style="max-width: 580px; width: 100%; display: flex; flex-direction: column; height: 100%;">
+        
+        <!-- Заголовки -->
+        <div class="hero-statements" style="margin-bottom: 2rem;">
+          <h1 style="font-family: 'Roboto Condensed', sans-serif; color: #20b2aa; font-size: 1.85rem; font-weight: 700; line-height: 1.25; margin: 0 0 0.4rem 0;">Informationen strukturieren.</h1>
+          <h1 style="font-family: 'Roboto Condensed', sans-serif; color: #20b2aa; font-size: 1.85rem; font-weight: 700; line-height: 1.25; margin: 0 0 0.4rem 0;">Prozesse verbessern.</h1>
+          <h1 style="font-family: 'Roboto Condensed', sans-serif; color: #20b2aa; font-size: 1.85rem; font-weight: 700; line-height: 1.25; margin: 0 0 0.4rem 0;">Fundierte Entscheidungen ermöglichen.</h1>
+        </div>
 
-      <div class="about-text-body">
-        <p>
-          Diese drei Prinzipien verbinden alle Projekte dieses Portfolios. Unabhängig davon, ob es um Business Analysis, Reporting, Data Analytics oder KI-gestützte Lösungskonzepte geht, steht immer dieselbe Fragestellung im Mittelpunkt: Wie lassen sich komplexe fachliche Anforderungen in nachvollziebare, skalierbare und praxisnahe Lösungen übersetzen?
-        </p>
-        <p>
-          Erfolgreiche Digitalisierung beginnt nicht mit Technologie, sondern mit einem klaren Verständnis des fachlichen Problems. Deshalb stehen Analyse, Strukturierung und fundierte Entscheidungen im Mittelpunkt meiner Arbeitsweise.
-        </p>
-      </div>
+        <!-- Текст -->
+        <div class="about-text-body">
+          <p style="color: #2c3e50; font-size: 1.1rem; line-height: 1.55; margin-bottom: 1.5rem;">
+            Diese drei Prinzipien verbinden alle Projekte dieses Portfolios. Unabhängig davon, ob es um Business Analysis, Reporting, Data Analytics oder KI-gestützte Lösungskonzepte geht, steht immer dieselbe Fragestellung im Mittelpunkt: Wie lassen sich komplexe fachliche Anforderungen in nachvollziehbare, skalierbare und praxisnahe Lösungen übersetzen?
+          </p>
+          <p style="color: #2c3e50; font-size: 1.1rem; line-height: 1.55; margin-bottom: 1.5rem;">
+            Erfolgreiche Digitalisierung beginnt nicht mit Technologie, sondern mit einem klaren Verständnis des fachlichen Problems. Deshalb stehen Analyse, Strukturierung und fundierte Entscheidungen im Mittelpunkt meiner Arbeitsweise.
+          </p>
+        </div>
 
-      <div class="resume-wrapper">
-        <a href="./assets/cv.pdf" target="_blank" class="resume-link">
-          <img src="./icons/user-icon.svg" alt="Lebenslauf" class="resume-icon">
-          <span>Lebenslauf</span>
-        </a>
+        <!-- Іконка CV / Lebenslauf -->
+        <div class="resume-wrapper" style="margin-top: auto; padding-top: 2rem;">
+          <a href="./assets/cv.pdf" target="_blank" style="display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; color: #20b2aa; font-size: 0.9rem; font-weight: 500;">
+            <img src="./icons/user-icon.svg" alt="Lebenslauf" style="width: 42px; height: 42px; object-fit: contain; margin-bottom: 0.3rem;">
+            <span>Lebenslauf</span>
+          </a>
+        </div>
+
       </div>
 
     </div>
 
   </div>
 </main>
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
 
 
 
