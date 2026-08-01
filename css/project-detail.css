@@ -43,7 +43,7 @@
 .project-header-block {
   border-left: 4px solid var(--accent-teal);
   padding-left: 1rem;
-  margin-bottom: 1.2rem; /* Зменшено відступ */
+  margin-bottom: 2.2rem !important; /* <--- ВІДСТАНЬ ДО АРТЕФАКТУ */
 }
 
 .project-badge {
