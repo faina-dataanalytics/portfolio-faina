@@ -88,7 +88,7 @@ Meine Projekte folgen einem konsistenten methodischen Ansatz:
 **Faina Kozyrieva**  
 Business Analysis · Data Analytics · AI Solutions  
 
-[LinkedIn](https://www.linkedin.com/in/fainakozyrieva/) • [E‑Mail](faina.kozyrieva@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/fainakozyrieva/) • [E‑Mail](data.analytikerin@gmail.com)
 
 ---
 
