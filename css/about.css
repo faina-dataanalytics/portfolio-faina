@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ABOUT PAGE (Фон на всю ліву половину)
+   ABOUT PAGE (Примусова сіра заливка лівої колонки)
    ========================================================================== */
 
 :root {
@@ -8,59 +8,62 @@
   --text-dark: #2c3e50;
 }
 
-/* Прибираємо зовнішні відступи та розтягуємо секцію */
+/* Скидаємо відступи головного контейнера */
 .about-page-override {
   padding: 0 !important;
   margin: 0 !important;
   width: 100%;
-  min-height: calc(100vh - 80px); /* розтягує на всю висоту екрана */
+  min-height: calc(100vh - 80px);
 }
 
-/* Контейнер сітки: розтягуємо на 100% ширини без бокових padding */
 .about-page-override .project-detail-container {
   max-width: 100% !important;
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
   min-height: calc(100vh - 80px);
-  align-items: stretch; /* Робить обидві колонки однаковими за висотою */
+  align-items: stretch !important;
 }
 
-/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН НА ВСЮ ШИРИНУ Й ВИСОТУ) ================= */
+/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= */
+/* Задаємо сірий фон прямо на клас project-left-col */
+.about-page-override .project-left-col,
 .about-left-box {
-  background-color: var(--bg-left-gray) !important;
+  background-color: #e8ecef !important; /* Примусовий сірий фон */
+  background: #e8ecef !important;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Присуває контент ближче до центральної лінії */
-  justify-content: flex-start;
-  padding: 4rem 3rem 4rem 2rem;
-  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  padding: 4rem 3rem 4rem 2rem !important;
+  box-sizing: border-box !important;
 }
 
-/* Обгортка для внутрішнього контенту лівої колонки, щоб текст не розповзався */
+/* Внутрішній вміст лівої колонки */
 .about-left-box .sidebar-block {
   width: 100%;
-  max-width: 360px; /* Фіксована ширина контенту всередині сірої зони */
+  max-width: 360px;
   margin-bottom: 3rem;
 }
 
 /* ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= */
+.about-page-override .project-right-col,
 .about-right-box {
-  background-color: #ffffff;
-  padding: 4rem 2rem 4rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  box-sizing: border-box;
+  background-color: #ffffff !important;
+  padding: 4rem 2rem 4rem 4rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
 }
 
 .about-right-box .hero-statements,
 .about-right-box .about-text-body {
-  max-width: 580px; /* Комфортна ширина для читання */
+  max-width: 580px;
 }
 
-/* --- ВНУТРІШНІ СТИЛІ ЕЛЕМЕНТІВ --- */
+/* --- ТЕКСТИ ТА ІКОНКИ --- */
 
 .sidebar-icon {
   width: 36px !important;
