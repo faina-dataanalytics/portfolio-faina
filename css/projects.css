@@ -36,10 +36,10 @@
 }
 
 .column-icon {
-  width: 45px !important;
-  height: 45px !important;
+  width: 75px !important;
+  height: 75px !important;
   object-fit: contain;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.2rem;
   display: block;
 }
 
