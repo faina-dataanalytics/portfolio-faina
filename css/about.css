@@ -1,14 +1,14 @@
 /* ==========================================================================
-   ABOUT PAGE (Примусова сіра заливка лівої колонки)
+   ABOUT PAGE STYLES & RESPONSIVENESS
    ========================================================================== */
 
 :root {
   --teal-accent: #20b2aa;
-  --bg-left-gray: #e8ecef; /* Сірий колір лівої частини */
+  --bg-left-gray: #e8ecef;
   --text-dark: #2c3e50;
 }
 
-/* Скидаємо відступи головного контейнера */
+/* align for containar */
 .about-page-override {
   padding: 0 !important;
   margin: 0 !important;
@@ -16,60 +16,68 @@
   min-height: calc(100vh - 80px);
 }
 
-.about-page-override .project-detail-container {
+.about-container {
   max-width: 100% !important;
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
   min-height: calc(100vh - 80px);
+  display: flex !important;
   align-items: stretch !important;
 }
 
-/* ================= ЛІВА КОЛОНКА (СІРИЙ ФОН) ================= */
-/* Задаємо сірий фон прямо на клас project-left-col */
-.about-page-override .project-left-col,
+/* ================= LEFT COLUMN ================= */
 .about-left-box {
-  background-color: #e8ecef !important; /* Примусовий сірий фон */
-  background: #e8ecef !important;
-  width: 100%;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-end !important;
-  justify-content: flex-start !important;
-  padding: 4rem 3rem 4rem 2rem !important;
-  box-sizing: border-box !important;
+  background-color: var(--bg-left-gray) !important;
+  flex: 1;
+  width: 50%;
+  padding: 4rem 3rem 4rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-/* Внутрішній вміст лівої колонки */
-.about-left-box .sidebar-block {
+.about-left-inner {
   width: 100%;
   max-width: 360px;
-  margin-bottom: 3rem;
 }
 
-/* ================= ПРАВА КОЛОНКА (БІЛИЙ ФОН) ================= */
-.about-page-override .project-right-col,
+.about-left-box .sidebar-block {
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.about-left-box .sidebar-block:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= RIGTH COLUMN ================= */
 .about-right-box {
   background-color: #ffffff !important;
-  padding: 4rem 2rem 4rem 4rem !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-  box-sizing: border-box !important;
+  flex: 1;
+  width: 50%;
+  padding: 4rem 2rem 4rem 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-.about-right-box .hero-statements,
-.about-right-box .about-text-body {
+.about-right-inner {
   max-width: 580px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* --- ТЕКСТИ ТА ІКОНКИ --- */
-
 .sidebar-icon {
-  width: 55px !important;
-  height: 55px !important;
+  width: 50px !important;
+  height: 50px !important;
   object-fit: contain;
   margin-bottom: 0.5rem;
+  display: block;
 }
 
 .sidebar-title {
@@ -145,4 +153,44 @@
   height: 42px !important;
   object-fit: contain;
   margin-bottom: 0.3rem;
+}
+
+/* ==========================================================================
+   ADAPTION FOR MOBILE
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column !important; 
+    min-height: auto;
+  }
+
+  .about-left-box,
+  .about-right-box {
+    width: 100% !important; 
+    padding: 2.5rem 1.5rem !important; 
+    align-items: flex-start !important; 
+  }
+
+  .about-left-inner,
+  .about-right-inner {
+    max-width: 100%;
+  }
+
+  .statement-item {
+    font-size: 1.5rem; 
+  }
+
+  .about-text-body p {
+    font-size: 1rem;
+  }
+
+  .about-left-box .sidebar-block {
+    margin-bottom: 2rem;
+  }
+
+  .resume-wrapper {
+    align-self: left; 
+    padding-top: 1rem;
+  }
 }
