@@ -6,6 +6,7 @@
   --teal-accent: #20b2aa;
   --bg-left-gray: #e8ecef;
   --text-dark: #2c3e50;
+  --accent-blue: #3b7080;    
 }
 
 /* align for containar */
@@ -143,7 +144,7 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: var(--teal-accent);
+  color: var(--accent-blue);  
   font-size: 0.9rem;
   font-weight: 500;
 }
