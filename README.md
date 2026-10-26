@@ -1,92 +1,88 @@
-# Faina Kozyrieva — Business Analysis, Data Analytics & AI Solutions
+# Faina Kozyrieva — Data Analytics | Berichtswesen 
 
-Willkommen in meinem Portfolio.  
-Ich bin Business Analystin und Data Analytics Specialist mit Schwerpunkt auf **strukturierter Informationsmodellierung**, **Prozessstandardisierung**, **datengetriebener Entscheidungsunterstützung** und **KI‑gestützten Lösungen**.
+Willkommen in meinem Portfolio!
 
-Meine Arbeit verbindet fachliche Analyse, Datenkompetenz und moderne KI‑Methoden, um komplexe Anforderungen in **skalierbare, verständliche und wirkungsvolle Lösungen** zu übersetzen.
+Ich verbinde langjährige Berufserfahrung im Berichtswesen, Monitoring und in der strukturierten Aufbereitung von Informationen mit aktuellen Kompetenzen in Data Analytics, Data Science und KI-gestützten Lösungen.
+
+Mein Schwerpunkt liegt darauf, Informationen aus unterschiedlichen Quellen systematisch zusammenzuführen, Kennzahlen auszuwerten und Ergebnisse verständlich aufzubereiten. Ergänzend entwickle ich meine technischen Fähigkeiten in SQL, Python, BI-Tools und Machine Learning weiter.
 
 ---
 
 ## Profil
 
-Ich entwickle strukturierte, skalierbare und KI‑gestützte Lösungen, die komplexe fachliche Anforderungen in praktische Entscheidungssysteme überführen.
+Meine berufliche Erfahrung umfasst die Standardisierung von Berichtsprozessen, die Koordination der Datenerfassung, die Qualitätssicherung von Informationen sowie die Erstellung von Berichten und die Aufbereitung von Arbeitsergebnissen.
 
-Ich wende Data Analytics und Machine Learning an, um Erkenntnisse zu gewinnen, Muster zu erklären und evidenzbasierte Entscheidungsfindung zu unterstützen.
+In meinen Analyseprojekten ergänze ich diese Erfahrung durch datenbasierte Methoden: von der explorativen Datenanalyse und statistischen Auswertung bis hin zu Machine Learning und interaktiven Berichten.
+
+Dabei stehen nachvollziehbare Ergebnisse, eine klare Informationsstruktur und der praktische Nutzen für die jeweilige Fragestellung im Mittelpunkt.
 
 ---
 
 ## Kompetenzschwerpunkte
 
-### Business & AI Solutions
-- Business Analysis  
-- Requirements Engineering  
-- Prozessanalyse  
-- Informationsarchitektur  
-- Decision Support  
-- Document Intelligence  
-- KI‑Solution Design  
-- Change Management  
+### Data Analytics & Science
+- Explorative Datenanalyse (EDA)
+- Datenaufbereitung und statistische Auswertung
+- SQL-Analysen und Datenbankabfragen
+- Kundensegmentierung und Verhaltensanalyse
+- Machine Learning und Predictive Analytics
+- BI-Reporting und interaktive Dashboards
+- Product Analytics
 
-### Data Science & Analytics
-- Explorative Datenanalyse  
-- SQL Analytics  
-- Statistik  
-- Machine Learning  
-- Predictive Analytics  
-- Explainable AI  
-- Dashboard‑Design (Tableau, Power BI)  
-- Product Analytics  
+### Berichtswesen & Ergebnisdarstellung
+- Standardisierung von Berichtsprozessen
+- KPI-Reporting und Kennzahlenaufbereitung
+- Datenkonsolidierung und Qualitätsprüfung
+- Monitoring von Programmen und Arbeitsergebnissen
+- Erstellung von Berichten und Ergebnispräsentationen
+- Strukturierte Dokumentation und Informationsaufbereitung
 
 ---
 
 ## Projektportfolio
 
-### **Business Transformation & AI**
-Ausgewählte Projekte aus Business Analysis, Prozessoptimierung und KI‑gestützter Lösungsentwicklung:
-
-- KI‑gestützte Bewertung von Förderanträgen  
-- AI Knowledge Platform (RAG‑basiert)  
-- Unterstützung im öffentlichen Beschaffungswesen (Predictive Analytics)  
-- Standardisierung der Unternehmensberichterstattung  
-- Digitales Medienreporting  
-- Workflow‑Automatisierung für Printproduktion  
-
-➡ [Details ansehen](https://github.com/faina-dataanalytics/business-AI-solutions-portfolio)
-
----
-
-### **Data Science & Analytics**
-Analytische Projekte aus SQL, Python, Statistik, Machine Learning, Tableau, Power BI und Product Analytics:
+### **Data Analytics & Science**
+Analytische Projekte mit SQL, Python, Statistik, Machine Learning, Tableau und Power BI.
 
 - Internationale Markt- & Kundenanalyse (Tableau)  
-- Kundensegmentierung & Verhaltensanalyse (ML, Python)  
+- Kundensegmentierung & Verhaltensanalyse (Machine Learning, Python)  
 - Personalplanung für die Grippesaison (Statistik)  
 - Analyse der Flugperformance (Power BI)  
 - Mobile Onboarding & User Retention Analyse (Product Analytics)  
-- Prognose risikoreicher Fahrzeugkäufe (ML, Explainable AI)  
+- Prognose risikoreicher Fahrzeugkäufe (Machine Learning, Explainable AI)  
 
 ➡ [Details ansehen](https://github.com/faina-dataanalytics/data-science-analytics-portfolio)
+
+### **Berichtswesen & Ergebnisdarstellung**
+Projekte aus meiner beruflichen Praxis und ausgewählte Arbeitsproben zur Standardisierung von Berichtsprozessen, zum Monitoring und zur verständlichen Aufbereitung von Informationen und Kennzahlen.
+
+- Digitalisierung und Standardisierung der Medienberichterstattung
+- Jahresberichte und Kennzahlenaufbereitung
+- Monitoring staatlicher Reformprogramme
+- Analyseergebnisse strukturiert präsentieren
+
+➡ [Details ansehen](https://github.com/faina-dataanalytics/berichtwesen-ergebnisdarstelung-portfolio) 
 
 ---
 
 ## Arbeitsweise
 
-Meine Projekte folgen einem konsistenten methodischen Ansatz:
+Meine Projekte verbinden eine strukturierte Vorgehensweise mit dem Blick für die praktische Anwendung:
 
-- Strukturierung komplexer Informationen  
-- Definition klarer Indikatoren und Datenmodelle  
-- Prozessstandardisierung  
-- Automatisierung repetitiver Tätigkeiten  
-- Entwicklung skalierbarer Lösungsarchitekturen  
-- enge Abstimmung mit Stakeholdern  
-- verständliche Dokumentation und Wissenstransfer  
+- Informationen systematisch erfassen und strukturieren
+- Datenqualität und Vollständigkeit prüfen
+- Kennzahlen und geeignete Indikatoren aufbereiten
+- Ergebnisse analysieren und nachvollziehbar dokumentieren
+- Berichts- und Arbeitsprozesse standardisieren
+- Erkenntnisse verständlich präsentieren
+- Datenbasierte und KI-gestützte Lösungsansätze untersuchen
 
 ---
 
 ## Kontakt
 
 **Faina Kozyrieva**  
-Business Analysis · Data Analytics · AI Solutions  
+Data Analytics & Reporting | Berichtswesen, KPI-Auswertungen & Datenvisualisierung | SQL · Power BI · Python
 
 [LinkedIn](https://www.linkedin.com/in/fainakozyrieva/) • [E‑Mail](data.analytikerin@gmail.com)
 
@@ -94,5 +90,4 @@ Business Analysis · Data Analytics · AI Solutions
 
 ## Hinweis
 
-Dieses Portfolio dient der Präsentation meiner beruflichen Projekte und Kompetenzen.  
-Die Inhalte
+Dieses Portfolio dient der Präsentation beruflicher Erfahrungen, ausgewählter Analyseprojekte sowie konzeptioneller und praxisorientierter Arbeiten. Die Projekte unterscheiden sich hinsichtlich ihres Entstehungskontexts und sind entsprechend den jeweiligen Projektbeschreibungen eingeordnet.
